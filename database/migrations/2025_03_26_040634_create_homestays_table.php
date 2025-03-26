@@ -17,6 +17,8 @@ return new class extends Migration
             $table->text('deskripsi')->nullable();
             $table->decimal('harga_sewa', 12, 2);
             $table->json('gambar')->nullable(); // untuk multiple images
+            $table->string('latitude')->nullable()->default('-7.356823979078527');
+            $table->string('longitude')->nullable()->default('109.90581334769975');
             $table->timestamps();
         });
     }

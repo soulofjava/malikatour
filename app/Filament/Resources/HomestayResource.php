@@ -8,6 +8,8 @@ use App\Models\Homestay;
 use Filament\Forms\Form;
 use Filament\Tables\Table;
 use Filament\Resources\Resource;
+use Filament\Forms\Components\Grid;
+use Filament\Forms\Components\View;
 use Filament\Forms\Components\Textarea;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Forms\Components\TextInput;
@@ -42,6 +44,19 @@ class HomestayResource extends Resource
                     ->numeric()
                     ->required(),
 
+                TextInput::make('latitude')
+                    ->required()
+                    ->id('latitude'),
+
+                TextInput::make('longitude')
+                    ->required()
+                    ->id('longitude'),
+
+                Grid::make(1)
+                    ->schema([
+                        View::make('components.map-preview'),
+                    ]),
+                    
                 FileUpload::make('gambar')
                     ->label('Foto Homestay')
                     ->multiple()

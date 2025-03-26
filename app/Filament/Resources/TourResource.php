@@ -9,6 +9,7 @@ use Filament\Forms\Form;
 use Filament\Tables\Table;
 use Filament\Resources\Resource;
 use Filament\Forms\Components\Toggle;
+use Filament\Forms\Components\Textarea;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Forms\Components\TextInput;
@@ -47,6 +48,11 @@ class TourResource extends Resource
                     ->numeric()
                     ->suffix('Hari')
                     ->required(),
+
+                Textarea::make('keterangan')
+                    ->label('Keterangan')
+                    ->rows(4)
+                    ->columnSpanFull(),
 
                 FileUpload::make('image')
                     ->label('Gambar')

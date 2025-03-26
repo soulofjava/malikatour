@@ -64,6 +64,46 @@
                             <p class="text-slate-400">
                                 {{ $homestay->deskripsi }}
                             </p>
+                            @php
+                                $lat = $homestay->latitude;
+                                $lng = $homestay->longitude;
+                            @endphp
+
+                            @if ($lat && $lng)
+                                <div class="mt-3 text-center">
+                                    <a href="https://www.google.com/maps?q={{ $lat }},{{ $lng }}"
+                                        target="_blank"
+                                        class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-md text-sm font-semibold shadow transition-all">
+                                        📍 Lihat Lokasi di Google Maps
+                                    </a>
+                                </div>
+                            @endif
+
+                            @php
+                                $site = \App\Models\SiteSetting::first();
+                                $nomorAsli =
+                                    $site && $site->kontak ? preg_replace('/[^0-9]/', '', $site->kontak) : null;
+
+                                // Ubah 08xxx menjadi 628xxx
+                                $nomorWa =
+                                    $nomorAsli && str_starts_with($nomorAsli, '0')
+                                        ? '62' . substr($nomorAsli, 1)
+                                        : $nomorAsli;
+
+                                $pesan = urlencode(
+                                    "Halo, saya tertarik dengan Homestay *{$homestay->title}*. Bisa kirim informasi lebih lanjut?",
+                                );
+                            @endphp
+
+                            @if ($nomorWa)
+                                <div class="mt-4 text-center">
+                                    <a href="https://api.whatsapp.com/send?phone={{ $nomorWa }}&text={{ $pesan }}"
+                                        target="_blank"
+                                        class="inline-block bg-green-500 hover:bg-green-600 text-white px-5 py-2 rounded-md text-sm font-semibold shadow transition-all">
+                                        Berminat? Hubungi Kami via WhatsApp
+                                    </a>
+                                </div>
+                            @endif
                         </div>
                     </div>
 

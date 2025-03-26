@@ -186,10 +186,10 @@
                     </div>
                 </div> --}}
                 <!--end content-->
-                @foreach (App\Models\Tour::all() as $data)
+                @foreach (App\Models\Tour::latest()->take(12)->get() as $data)
                     <div class="group relative overflow-hidden rounded-md shadow dark:shadow-gray-800 w-[258px] h-[258px]">
-                        <img src="{{ asset('storage/' . $data->image) }}" alt="{{ $data->title }}"
-                            class="w-full h-full object-cover" />
+                        <img src="{{ Str::startsWith($data->image, 'http') ? $data->image : asset('storage/' . $data->image) }}"
+                            alt="{{ $data->title }}" class="w-full h-full object-cover" />
 
                         <span class="absolute inset-0 bg-slate-900/20 duration-500"></span>
 
@@ -202,7 +202,8 @@
                         @endif
 
                         <div class="absolute bottom-0 start-0 end-0 p-4 pt-0">
-                            <a href="#" class="text-white/80 hover:text-white text-xl font-semibold">
+                            <a href="{{ route('tour.detail', $data->id) }}"
+                                class="text-white/80 hover:text-white text-xl font-semibold">
                                 {{ $data->title }}
                             </a>
 
@@ -452,7 +453,7 @@
                         </div>
                     </div>
                 </div> --}}
-                @foreach (App\Models\Homestay::all() as $data2)
+                @foreach (App\Models\Homestay::latest()->take(9)->get() as $data2)
                     @php
                         $gambar = is_array($data2->gambar) ? $data2->gambar : json_decode($data2->gambar, true);
                         $gambarPertama = $gambar[0] ?? null;
@@ -460,8 +461,8 @@
 
                     <div class="blog relative rounded-md shadow dark:shadow-gray-800 overflow-hidden">
                         @if ($gambarPertama)
-                            <img src="{{ asset('storage/' . $gambarPertama) }}" alt="{{ $data2->nama }}"
-                                class="w-[353px] h-[243px] object-cover rounded-t-md">
+                            <img src="{{ Str::startsWith($gambarPertama, 'http') ? $gambarPertama : asset('storage/' . $gambarPertama) }}"
+                                alt="{{ $data2->nama }}" class="w-[353px] h-[243px] object-cover rounded-t-md">
                         @else
                             <img src="{{ asset('assets/images/no-image.jpg') }}" alt="No image"
                                 class="w-[353px] h-[243px] object-cover rounded-t-md">
