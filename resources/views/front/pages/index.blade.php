@@ -25,7 +25,7 @@
     <!-- End Hero -->
 
     <!-- Start -->
-    <section class="relative">
+    {{-- <section class="relative">
         <div class="container relative">
             <div class="grid grid-cols-1 justify-center">
                 <div class="relative -mt-28">
@@ -77,7 +77,7 @@
                 </div>
             </div><!--end grid-->
         </div><!--end container-->
-    </section>
+    </section> --}}
 
     <section class="relative md:py-24 py-16 overflow-hidden">
         <div class="container relative">
@@ -152,14 +152,18 @@
 
         <div class="container relative md:mt-24 mt-16">
             <div class="grid grid-cols-1 pb-8 text-center">
-                <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Popular Tours</h3>
+                <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">
+                    Wisata Populer
+                </h3>
 
-                <p class="text-slate-400 max-w-xl mx-auto">Start working with Tailwind CSS that can provide everything you
-                    need to generate awareness, drive traffic, connect.</p>
+                <p class="text-slate-400 max-w-xl mx-auto">
+                    Temukan berbagai destinasi wisata terbaik yang direkomendasikan untuk liburan Anda. Jelajahi, nikmati,
+                    dan ciptakan pengalaman tak terlupakan bersama kami.
+                </p>
             </div><!--end grid-->
 
             <div class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-[30px] mt-8">
-                <div class="group relative overflow-hidden rounded-md shadow dark:shadow-gray-800">
+                {{-- <div class="group relative overflow-hidden rounded-md shadow dark:shadow-gray-800">
                     <img src="assets/images/hotel/1.jpg" alt="">
                     <span class="absolute inset-0 bg-slate-900/20 duration-500"></span>
                     <div class="absolute top-0 start-0 p-4 pb-0">
@@ -176,140 +180,41 @@
                             <span class="text-gray-100"><i class="uil uil-plane-fly text-[18px]"></i> 10 Days</span>
                         </div>
                     </div>
-                </div><!--end content-->
+                </div> --}}
+                <!--end content-->
+                @foreach (App\Models\Tour::all() as $data)
+                    <div class="group relative overflow-hidden rounded-md shadow dark:shadow-gray-800">
+                        <img src="{{ asset('storage/' . $data->image) }}" alt="{{ $data->title }}">
+                        <span class="absolute inset-0 bg-slate-900/20 duration-500"></span>
 
-                <div class="group relative overflow-hidden rounded-md shadow dark:shadow-gray-800">
-                    <img src="assets/images/hotel/2.jpg" alt="">
-                    <span class="absolute inset-0 bg-slate-900/20 duration-500"></span>
-                    <div class="absolute top-0 start-0 p-4 pb-0">
-                        <span
-                            class="bg-orange-600 text-white text-[10px] font-bold px-2.5 py-0.5 rounded h-5 ms-1">Recommend</span>
-                    </div>
+                        @if ($data->is_recommended)
+                            <div class="absolute top-0 start-0 p-4 pb-0">
+                                <span
+                                    class="bg-orange-600 text-white text-[10px] font-bold px-2.5 py-0.5 rounded h-5 ms-1">
+                                    Direkomendasikan
+                                </span>
+                            </div>
+                        @endif
 
-                    <div class="absolute bottom-0 start-0 end-0 p-4 pt-0">
-                        <a href="" class="text-white/80 hover:text-white text-xl font-semibold">Paradise Beach,
-                            Island</a>
+                        <div class="absolute bottom-0 start-0 end-0 p-4 pt-0">
+                            <a href="#" class="text-white/80 hover:text-white text-xl font-semibold">
+                                {{ $data->title }}
+                            </a>
 
-                        <div class="flex justify-between mt-1">
-                            <span class="text-gray-100"><i class="uil uil-dollar-sign text-[18px]"></i> 549</span>
-                            <span class="text-gray-100"><i class="uil uil-plane-fly text-[18px]"></i> 10 Days</span>
+                            <div class="flex justify-between mt-1">
+                                <span class="text-gray-100">
+                                    <i class="uil uil-dollar-sign text-[18px]"></i>
+                                    Rp {{ number_format($data->price, 0, ',', '.') }}
+                                </span>
+                                <span class="text-gray-100">
+                                    <i class="uil uil-plane-fly text-[18px]"></i>
+                                    {{ $data->duration_days }} Hari
+                                </span>
+                            </div>
                         </div>
                     </div>
-                </div><!--end content-->
+                @endforeach
 
-                <div class="group relative overflow-hidden rounded-md shadow dark:shadow-gray-800">
-                    <img src="assets/images/hotel/3.jpg" alt="">
-                    <span class="absolute inset-0 bg-slate-900/20 duration-500"></span>
-                    <div class="absolute top-0 start-0 p-4 pb-0">
-                        <span
-                            class="bg-orange-600 text-white text-[10px] font-bold px-2.5 py-0.5 rounded h-5 ms-1">Recommend</span>
-                    </div>
-
-                    <div class="absolute bottom-0 start-0 end-0 p-4 pt-0">
-                        <a href="" class="text-white/80 hover:text-white text-xl font-semibold">Paradise Beach,
-                            Island</a>
-
-                        <div class="flex justify-between mt-1">
-                            <span class="text-gray-100"><i class="uil uil-dollar-sign text-[18px]"></i> 549</span>
-                            <span class="text-gray-100"><i class="uil uil-plane-fly text-[18px]"></i> 10 Days</span>
-                        </div>
-                    </div>
-                </div><!--end content-->
-
-                <div class="group relative overflow-hidden rounded-md shadow dark:shadow-gray-800">
-                    <img src="assets/images/hotel/4.jpg" alt="">
-                    <span class="absolute inset-0 bg-slate-900/20 duration-500"></span>
-                    <div class="absolute top-0 start-0 p-4 pb-0">
-                        <span
-                            class="bg-orange-600 text-white text-[10px] font-bold px-2.5 py-0.5 rounded h-5 ms-1">Recommend</span>
-                    </div>
-
-                    <div class="absolute bottom-0 start-0 end-0 p-4 pt-0">
-                        <a href="" class="text-white/80 hover:text-white text-xl font-semibold">Paradise Beach,
-                            Island</a>
-
-                        <div class="flex justify-between mt-1">
-                            <span class="text-gray-100"><i class="uil uil-dollar-sign text-[18px]"></i> 549</span>
-                            <span class="text-gray-100"><i class="uil uil-plane-fly text-[18px]"></i> 10 Days</span>
-                        </div>
-                    </div>
-                </div><!--end content-->
-
-                <div class="group relative overflow-hidden rounded-md shadow dark:shadow-gray-800">
-                    <img src="assets/images/hotel/5.jpg" alt="">
-                    <span class="absolute inset-0 bg-slate-900/20 duration-500"></span>
-                    <div class="absolute top-0 start-0 p-4 pb-0">
-                        <span
-                            class="bg-orange-600 text-white text-[10px] font-bold px-2.5 py-0.5 rounded h-5 ms-1">Recommend</span>
-                    </div>
-
-                    <div class="absolute bottom-0 start-0 end-0 p-4 pt-0">
-                        <a href="" class="text-white/80 hover:text-white text-xl font-semibold">Paradise Beach,
-                            Island</a>
-
-                        <div class="flex justify-between mt-1">
-                            <span class="text-gray-100"><i class="uil uil-dollar-sign text-[18px]"></i> 549</span>
-                            <span class="text-gray-100"><i class="uil uil-plane-fly text-[18px]"></i> 10 Days</span>
-                        </div>
-                    </div>
-                </div><!--end content-->
-
-                <div class="group relative overflow-hidden rounded-md shadow dark:shadow-gray-800">
-                    <img src="assets/images/hotel/6.jpg" alt="">
-                    <span class="absolute inset-0 bg-slate-900/20 duration-500"></span>
-                    <div class="absolute top-0 start-0 p-4 pb-0">
-                        <span
-                            class="bg-orange-600 text-white text-[10px] font-bold px-2.5 py-0.5 rounded h-5 ms-1">Recommend</span>
-                    </div>
-
-                    <div class="absolute bottom-0 start-0 end-0 p-4 pt-0">
-                        <a href="" class="text-white/80 hover:text-white text-xl font-semibold">Paradise Beach,
-                            Island</a>
-
-                        <div class="flex justify-between mt-1">
-                            <span class="text-gray-100"><i class="uil uil-dollar-sign text-[18px]"></i> 549</span>
-                            <span class="text-gray-100"><i class="uil uil-plane-fly text-[18px]"></i> 10 Days</span>
-                        </div>
-                    </div>
-                </div><!--end content-->
-
-                <div class="group relative overflow-hidden rounded-md shadow dark:shadow-gray-800">
-                    <img src="assets/images/hotel/7.jpg" alt="">
-                    <span class="absolute inset-0 bg-slate-900/20 duration-500"></span>
-                    <div class="absolute top-0 start-0 p-4 pb-0">
-                        <span
-                            class="bg-orange-600 text-white text-[10px] font-bold px-2.5 py-0.5 rounded h-5 ms-1">Recommend</span>
-                    </div>
-
-                    <div class="absolute bottom-0 start-0 end-0 p-4 pt-0">
-                        <a href="" class="text-white/80 hover:text-white text-xl font-semibold">Paradise Beach,
-                            Island</a>
-
-                        <div class="flex justify-between mt-1">
-                            <span class="text-gray-100"><i class="uil uil-dollar-sign text-[18px]"></i> 549</span>
-                            <span class="text-gray-100"><i class="uil uil-plane-fly text-[18px]"></i> 10 Days</span>
-                        </div>
-                    </div>
-                </div><!--end content-->
-
-                <div class="group relative overflow-hidden rounded-md shadow dark:shadow-gray-800">
-                    <img src="assets/images/hotel/8.jpg" alt="">
-                    <span class="absolute inset-0 bg-slate-900/20 duration-500"></span>
-                    <div class="absolute top-0 start-0 p-4 pb-0">
-                        <span
-                            class="bg-orange-600 text-white text-[10px] font-bold px-2.5 py-0.5 rounded h-5 ms-1">Recommend</span>
-                    </div>
-
-                    <div class="absolute bottom-0 start-0 end-0 p-4 pt-0">
-                        <a href="" class="text-white/80 hover:text-white text-xl font-semibold">Paradise Beach,
-                            Island</a>
-
-                        <div class="flex justify-between mt-1">
-                            <span class="text-gray-100"><i class="uil uil-dollar-sign text-[18px]"></i> 549</span>
-                            <span class="text-gray-100"><i class="uil uil-plane-fly text-[18px]"></i> 10 Days</span>
-                        </div>
-                    </div>
-                </div><!--end content-->
             </div><!--end grid-->
         </div><!--end container-->
 
