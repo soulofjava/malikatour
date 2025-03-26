@@ -9,22 +9,25 @@
         <div class="container relative">
             <div class="grid grid-cols-1">
                 <div class="md:text-start text-center mt-10">
-                    <h1 class="font-bold text-white lg:leading-normal leading-normal text-4xl lg:text-5xl mb-6">Make your
-                        holidays <br> memorables</h1>
-                    <p class="text-white/70 text-xl max-w-xl">Start working with Tailwind CSS that can provide everything you
-                        need to generate awareness, drive traffic, connect.</p>
+                    <h1 class="font-bold text-white lg:leading-normal leading-normal text-4xl lg:text-5xl mb-6">
+                        Buat Liburan Anda <br> Tak Terlupakan
+                    </h1>
 
-                    <a href="">
+                    <p class="text-white/70 text-xl max-w-xl">
+                        Temukan homestay nyaman dan paket wisata terbaik untuk menjelajahi destinasi impian Anda. Mudah,
+                        terjangkau, dan penuh pengalaman berkesan.
+                    </p>
+
+                    {{-- <a href="">
                         <i
                             class="mdi mdi-arrow-down text-center inline-flex items-center justify-center rounded-full bg-white dark:bg-slate-900 size-12 mx-auto shadow-md dark:shadow-gray-800 mt-6"></i>
-                    </a>
+                    </a> --}}
                 </div>
-            </div><!--end grid-->
-        </div><!--end container-->
-    </section><!--end section-->
+            </div>
+        </div>
+    </section>
     <!-- End Hero -->
 
-    <!-- Start -->
     {{-- <section class="relative">
         <div class="container relative">
             <div class="grid grid-cols-1 justify-center">
@@ -75,12 +78,12 @@
                         </form>
                     </div>
                 </div>
-            </div><!--end grid-->
-        </div><!--end container-->
+            </div>
+        </div>
     </section> --}}
 
-    <section class="relative md:py-24 py-16 overflow-hidden">
-        <div class="container relative">
+    <section class="relative overflow-hidden">
+        {{-- <div class="container relative">
             <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-[30px]">
                 <div class="lg:col-span-5 md:col-span-6">
                     <div class="relative">
@@ -118,11 +121,11 @@
                                     class="uil uil-envelope"></i> Contact us</a>
                         </div>
                     </div>
-                </div>
-            </div><!--end grid-->
-        </div><!--end container-->
+                </div> 
+            </div>
+        </div> --}}
 
-        <div class="container relative md:mt-24 mt-16">
+        {{-- <div class="container relative md:mt-24 mt-16">
             <div class="grid md:grid-cols-6 grid-cols-2 justify-center gap-[30px]">
                 <div class="mx-auto py-4">
                     <img src="assets/images/client/amazon.svg" class="h-6" alt="">
@@ -148,7 +151,8 @@
                     <img src="assets/images/client/spotify.svg" class="h-6" alt="">
                 </div>
             </div><!--end grid-->
-        </div><!--end container-->
+        </div> --}}
+        <!--end container-->
 
         <div class="container relative md:mt-24 mt-16">
             <div class="grid grid-cols-1 pb-8 text-center">
@@ -204,7 +208,6 @@
 
                             <div class="flex justify-between mt-1">
                                 <span class="text-gray-100">
-                                    <i class="uil uil-dollar-sign text-[18px]"></i>
                                     Rp {{ number_format($data->price, 0, ',', '.') }}
                                 </span>
                                 <span class="text-gray-100">
@@ -219,7 +222,7 @@
             </div><!--end grid-->
         </div><!--end container-->
 
-        <div class="container relative md:mt-24 mt-16">
+        {{-- <div class="container relative md:mt-24 mt-16">
             <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-[30px]">
                 <div class="lg:col-span-5 md:col-span-6 order-1 md:order-2">
                     <img src="assets/images/hotel/ab3.jpg" class="rounded-full" alt="">
@@ -252,17 +255,17 @@
                         </div>
                     </div>
                 </div>
-            </div><!--end grid-->
-        </div><!--end container-->
+            </div>
+        </div> --}}
 
-        <div class="container relative md:mt-24 mt-16">
+        {{-- <div class="container relative md:mt-24 mt-16">
             <div class="grid grid-cols-1 pb-8 text-center">
                 <h3 class="mb-6 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">What our customer <br>
                     say about us</h3>
 
                 <p class="text-slate-400 max-w-xl mx-auto">Start working with Techwind that can provide everything you need
                     to generate awareness, drive traffic, connect.</p>
-            </div><!--end grid-->
+            </div>
 
             <div class="grid grid-cols-1 mt-8">
                 <div class="tiny-three-item">
@@ -416,19 +419,23 @@
                         </div>
                     </div>
                 </div>
-            </div><!--end grid-->
-        </div><!--end container-->
+            </div>
+        </div> --}}
 
-        <div class="container relative md:mt-24 mt-16">
+        <div class="container relative md:mt-24 mt-16 pb-24">
             <div class="grid grid-cols-1 pb-8 text-center">
-                <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Blog Or News</h3>
+                <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">
+                    Rekomendasi Homestay Terbaik
+                </h3>
 
-                <p class="text-slate-400 max-w-xl mx-auto">Start working with Tailwind CSS that can provide everything you
-                    need to generate awareness, drive traffic, connect.</p>
-            </div><!--end grid-->
+                <p class="text-slate-400 max-w-xl mx-auto">
+                    Temukan berbagai pilihan homestay yang nyaman, strategis, dan ramah di kantong untuk melengkapi
+                    pengalaman liburan Anda.
+                </p>
+            </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 mt-8 gap-[30px]">
-                <div class="blog relative rounded-md shadow dark:shadow-gray-800 overflow-hidden">
+                {{-- <div class="blog relative rounded-md shadow dark:shadow-gray-800 overflow-hidden">
                     <img src="assets/images/hotel/b1.jpg" alt="">
 
                     <div class="content p-6">
@@ -444,45 +451,47 @@
                                 More <i class="uil uil-arrow-right"></i></a>
                         </div>
                     </div>
-                </div>
+                </div> --}}
+                @foreach (App\Models\Homestay::all() as $data2)
+                    @php
+                        $gambar = is_array($data2->gambar) ? $data2->gambar : json_decode($data2->gambar, true);
+                        $gambarPertama = $gambar[0] ?? null;
+                    @endphp
 
-                <div class="blog relative rounded-md shadow dark:shadow-gray-800 overflow-hidden">
-                    <img src="assets/images/hotel/b2.jpg" alt="">
+                    <div class="blog relative rounded-md shadow dark:shadow-gray-800 overflow-hidden">
+                        @if ($gambarPertama)
+                            <img src="{{ asset('storage/' . $gambarPertama) }}" alt="{{ $data2->nama }}"
+                                class="w-[353px] h-[243px] object-cover rounded-t-md">
+                        @else
+                            <img src="{{ asset('assets/images/no-image.jpg') }}" alt="No image"
+                                class="w-[353px] h-[243px] object-cover rounded-t-md">
+                        @endif
 
-                    <div class="content p-6">
-                        <a href="blog-detail.html"
-                            class="title h5 text-lg font-medium hover:text-indigo-600 duration-500 ease-in-out">How apps is
-                            changing the IT world</a>
-                        <p class="text-slate-400 mt-3">The phrasal sequence of the is now so that many campaign and benefit
-                        </p>
+                        <div class="content p-6">
+                            <h5 class="text-lg font-medium text-black dark:text-white">
+                                {{ $data2->nama }}
+                            </h5>
+                            <p class="text-slate-400 mt-3">
+                                {{ \Illuminate\Support\Str::limit($data2->deskripsi, 100) }}
+                            </p>
 
-                        <div class="mt-4">
-                            <a href="blog-detail.html"
-                                class="relative inline-block tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 font-normal hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">Read
-                                More <i class="uil uil-arrow-right"></i></a>
+                            <div class="mt-4">
+                                <span class="text-indigo-600 font-semibold">
+                                    Rp {{ number_format($data2->harga_sewa, 0, ',', '.') }} / malam
+                                </span>
+                            </div>
+
+                            <div class="mt-4">
+                                <a href="{{ route('homestay.detail', $data2->id) }}"
+                                    class="inline-flex items-center px-4 py-2 bg-indigo-600 text-white text-sm font-medium rounded-md hover:bg-indigo-700 transition-all duration-300">
+                                    Selengkapnya
+                                    <i class="uil uil-arrow-right ms-2"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="blog relative rounded-md shadow dark:shadow-gray-800 overflow-hidden">
-                    <img src="assets/images/hotel/b3.jpg" alt="">
-
-                    <div class="content p-6">
-                        <a href="blog-detail.html"
-                            class="title h5 text-lg font-medium hover:text-indigo-600 duration-500 ease-in-out">Smartest
-                            Applications for Business</a>
-                        <p class="text-slate-400 mt-3">The phrasal sequence of the is now so that many campaign and benefit
-                        </p>
-
-                        <div class="mt-4">
-                            <a href="blog-detail.html"
-                                class="relative inline-block tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 font-normal hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">Read
-                                More <i class="uil uil-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div><!--end grid-->
-        </div><!--end container-->
-    </section><!--end section-->
-    <!-- end section -->
+                @endforeach
+            </div>
+        </div>
+    </section>
 @endsection

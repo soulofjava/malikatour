@@ -15,11 +15,22 @@
      <div class="container relative">
          <!-- Logo container-->
          <a class="logo" href="{{ url('/') }}">
-             <span class="inline-block dark:hidden">
-                 <img src="assets/images/logo-dark.png" class="l-dark" height="24" alt="">
-                 <img src="assets/images/logo-light.png" class="l-light" height="24" alt="">
-             </span>
-             <img src="assets/images/logo-light.png" height="24" class="hidden dark:inline-block" alt="">
+             @if (request()->is('/'))
+                 <img src="{{ asset('assets/images/logo-dark.png') }}" class="inline-block dark:hidden"
+                     style="height: 35px; width: 130px;" alt="logonya">
+                 <img src="{{ asset('assets/images/logo-light.png') }}" style="height: 35px; width: 130px;"
+                     class="hidden dark:inline-block" alt="logonya">
+             @else
+                 <span class="inline-block dark:hidden">
+                     <img src="{{ asset('assets/images/logo-dark.png') }}" class="l-dark" style="height: 35px; width: 130px;"
+                         alt="logonya">
+                     <img src="{{ asset('assets/images/logo-light.png') }}" class="l-light" alt="logonya"
+                         style="height: 35px; width: 130px;">
+                 </span>
+                 <img src="{{ asset('assets/images/logo-light.png') }}" class="hidden dark:inline-block" alt="logonya"
+                     style="height: 35px; width: 130px;">
+             @endif
+
          </a>
 
          <!-- End Logo container-->
@@ -65,8 +76,8 @@
 
          <div id="navigation">
              <!-- Navigation Menu-->
-             <ul class="navigation-menu nav-light">
-                 {{-- <li><a href="index.html" class="sub-menu-item">Home</a></li> --}}
+             <ul class="navigation-menu {{ !request()->is('/') ? '' : 'nav-light' }}">
+                 <li><a href="{{ url('/') }}" class="sub-menu-item">Beranda</a></li>
 
                  {{-- <li class="has-submenu parent-parent-menu-item">
                      <a href="javascript:void(0)">Landings</a><span class="menu-arrow"></span>
