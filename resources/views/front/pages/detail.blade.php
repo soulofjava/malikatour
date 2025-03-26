@@ -21,8 +21,8 @@
                             @foreach ($gambar as $index => $img)
                                 <div x-show="current === {{ $index + 1 }}"
                                     class="w-full h-full absolute inset-0 transition-all duration-500">
-                                    <img src="{{ asset('storage/' . $img) }}" alt="Foto Homestay"
-                                        class="w-full h-full object-cover rounded-md">
+                                    <img src="{{ Str::startsWith($img, 'http') ? $img : asset('storage/' . $img) }}"
+                                        alt="Foto Homestay" class="w-full h-full object-cover rounded-md">
                                 </div>
                             @endforeach
 
@@ -91,7 +91,7 @@
                                         : $nomorAsli;
 
                                 $pesan = urlencode(
-                                    "Halo, saya tertarik dengan Homestay *{$homestay->title}*. Bisa kirim informasi lebih lanjut?",
+                                    "Halo, saya tertarik dengan *{$homestay->nama}*. Bisa kirim informasi lebih lanjut?",
                                 );
                             @endphp
 

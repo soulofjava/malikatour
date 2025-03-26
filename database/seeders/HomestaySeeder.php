@@ -39,8 +39,8 @@ class HomestaySeeder extends Seeder
                 'deskripsi' => $faker->paragraph(3),
                 'harga_sewa' => $faker->numberBetween(150000, 750000),
                 'gambar' => json_encode($gambarUrls),
-                'latitude' => $faker->latitude(-8.0, -6.0),
-                'longitude' => $faker->longitude(106.0, 110.0),
+                'latitude' => $faker->latitude(-8.8, -5.5),
+                'longitude' => $faker->longitude(105.8, 114.0),
             ]);
         }
     }

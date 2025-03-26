@@ -11,8 +11,8 @@
                 <div class="lg:col-span-8 md:col-span-6">
                     <div class="p-6 rounded-md shadow dark:shadow-gray-800">
                         <div class="w-full h-[300px] overflow-hidden rounded-md">
-                            <img src="{{ asset('storage/' . $tour->image) }}" alt="{{ $tour->title }}"
-                                class="w-full h-full object-cover rounded-md">
+                            <img src="{{ Str::startsWith($tour->image, 'http') ? $tour->image : asset('storage/' . $tour->image) }}"
+                                alt="{{ $tour->title }}" class="w-full h-full object-cover rounded-md">
                         </div>
 
                         <div class="text-center mt-12">
@@ -81,7 +81,7 @@
 
                         @foreach ($recentTours as $item)
                             <div class="flex items-center mt-6">
-                                <img src="{{ asset('storage/' . $item->image) }}"
+                                <img src="{{ Str::startsWith($item->image, 'http') ? $item->image : asset('storage/' . $item->image) }}"
                                     class="w-[97px] h-[64px] rounded-md object-cover shadow dark:shadow-gray-800"
                                     alt="{{ $item->title }}">
 
