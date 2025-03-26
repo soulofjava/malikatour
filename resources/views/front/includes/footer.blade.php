@@ -9,37 +9,61 @@
                               <a href="#" class="text-[22px] focus:outline-none">
                                   <img src="assets/images/logo-light.png" alt="">
                               </a>
-                              <p class="mt-6 text-gray-300">Start working with Tailwind CSS that can provide everything
-                                  you need to generate awareness, drive traffic, connect.</p>
+                              @php
+                                  $setting = \App\Models\SiteSetting::first();
+                              @endphp
+                              <p class="mt-6 text-gray-300">
+                                  Hubungi kami melalui media sosial atau email untuk informasi lebih lanjut mengenai
+                                  layanan dan destinasi wisata yang kami tawarkan.
+                              </p>
+
                               <ul class="list-none mt-6">
-                                  <li class="inline"><a href="https://1.envato.market/techwind" target="_blank"
-                                          class="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i
-                                              class="uil uil-shopping-cart align-middle" title="Buy Now"></i></a></li>
-                                  <li class="inline"><a href="https://dribbble.com/shreethemes" target="_blank"
-                                          class="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i
-                                              class="uil uil-dribbble align-middle" title="dribbble"></i></a></li>
-                                  <li class="inline"><a href="https://www.behance.net/shreethemes" target="_blank"
-                                          class="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i
-                                              class="uil uil-behance" title="Behance"></i></a></li>
-                                  <li class="inline"><a href="http://linkedin.com/company/shreethemes" target="_blank"
-                                          class="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i
-                                              class="uil uil-linkedin" title="Linkedin"></i></a></li>
-                                  <li class="inline"><a href="https://www.facebook.com/shreethemes" target="_blank"
-                                          class="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i
-                                              class="uil uil-facebook-f align-middle" title="facebook"></i></a></li>
-                                  <li class="inline"><a href="https://www.instagram.com/shreethemes/" target="_blank"
-                                          class="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i
-                                              class="uil uil-instagram align-middle" title="instagram"></i></a></li>
-                                  <li class="inline"><a href="https://twitter.com/shreethemes" target="_blank"
-                                          class="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i
-                                              class="uil uil-twitter align-middle" title="twitter"></i></a></li>
-                                  <li class="inline"><a href="mailto:support@shreethemes.in"
-                                          class="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i
-                                              class="uil uil-envelope align-middle" title="email"></i></a></li>
-                                  <li class="inline"><a href="https://forms.gle/QkTueCikDGqJnbky9" target="_blank"
-                                          class="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i
-                                              class="uil uil-file align-middle" title="customization"></i></a></li>
-                              </ul><!--end icon-->
+                                  @if ($setting->email)
+                                      <li class="inline">
+                                          <a href="mailto:{{ $setting->email }}"
+                                              class="size-8 inline-flex items-center justify-center border border-gray-800 rounded-md hover:bg-indigo-600 hover:border-indigo-600 text-base text-center duration-500">
+                                              <i class="uil uil-envelope" title="Email"></i>
+                                          </a>
+                                      </li>
+                                  @endif
+
+                                  @if ($setting->instagram)
+                                      <li class="inline">
+                                          <a href="{{ $setting->instagram }}" target="_blank"
+                                              class="size-8 inline-flex items-center justify-center border border-gray-800 rounded-md hover:bg-indigo-600 hover:border-indigo-600 text-base text-center duration-500">
+                                              <i class="uil uil-instagram" title="Instagram"></i>
+                                          </a>
+                                      </li>
+                                  @endif
+
+                                  @if ($setting->facebook)
+                                      <li class="inline">
+                                          <a href="{{ $setting->facebook }}" target="_blank"
+                                              class="size-8 inline-flex items-center justify-center border border-gray-800 rounded-md hover:bg-indigo-600 hover:border-indigo-600 text-base text-center duration-500">
+                                              <i class="uil uil-facebook-f" title="Facebook"></i>
+                                          </a>
+                                      </li>
+                                  @endif
+
+                                  @if ($setting->youtube)
+                                      <li class="inline">
+                                          <a href="{{ $setting->youtube }}" target="_blank"
+                                              class="size-8 inline-flex items-center justify-center border border-gray-800 rounded-md hover:bg-indigo-600 hover:border-indigo-600 text-base text-center duration-500">
+                                              <i class="uil uil-youtube" title="YouTube"></i>
+                                          </a>
+                                      </li>
+                                  @endif
+
+                                  @if ($setting->kontak)
+                                      <li class="inline">
+                                          <a href="https://wa.me/{{ preg_replace('/[^0-9]/', '', $setting->kontak) }}"
+                                              target="_blank"
+                                              class="size-8 inline-flex items-center justify-center border border-gray-800 rounded-md hover:bg-indigo-600 hover:border-indigo-600 text-base text-center duration-500">
+                                              <i class="uil uil-whatsapp" title="WhatsApp"></i>
+                                          </a>
+                                      </li>
+                                  @endif
+                              </ul><!-- end icon -->
                           </div><!--end col-->
 
                           <div class="lg:col-span-2 md:col-span-4">
@@ -91,7 +115,7 @@
                           </div><!--end col-->
 
                           <div class="lg:col-span-3 md:col-span-4">
-                              <h5 class="tracking-[1px] text-gray-100 font-semibold">Newsletter</h5>
+                              {{-- <h5 class="tracking-[1px] text-gray-100 font-semibold">Newsletter</h5>
                               <p class="mt-6">Sign up and receive the latest tips via email.</p>
                               <form>
                                   <div class="grid grid-cols-1">
@@ -109,7 +133,7 @@
                                       <button type="submit" id="submitsubscribe" name="send"
                                           class="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">Subscribe</button>
                                   </div>
-                              </form>
+                              </form> --}}
                           </div><!--end col-->
                       </div><!--end grid-->
                   </div><!--end col-->
@@ -124,9 +148,10 @@
                       <p class="mb-0">©
                           <script>
                               document.write(new Date().getFullYear())
-                          </script> 
+                          </script>
                           {{-- Techwind. Design with <i class="mdi mdi-heart text-red-600"></i> by --}}
-                          <a href="https://soulofjava.github.io/myportofolio/" target="_blank" class="text-reset">TIM BAYANGAN</a>.
+                          <a href="https://soulofjava.github.io/myportofolio/" target="_blank" class="text-reset">TIM
+                              BAYANGAN</a>.
                       </p>
                   </div>
 

@@ -183,14 +183,15 @@
                 </div> --}}
                 <!--end content-->
                 @foreach (App\Models\Tour::all() as $data)
-                    <div class="group relative overflow-hidden rounded-md shadow dark:shadow-gray-800">
-                        <img src="{{ asset('storage/' . $data->image) }}" alt="{{ $data->title }}">
+                    <div class="group relative overflow-hidden rounded-md shadow dark:shadow-gray-800 w-[258px] h-[258px]">
+                        <img src="{{ asset('storage/' . $data->image) }}" alt="{{ $data->title }}"
+                            class="w-full h-full object-cover" />
+
                         <span class="absolute inset-0 bg-slate-900/20 duration-500"></span>
 
                         @if ($data->is_recommended)
                             <div class="absolute top-0 start-0 p-4 pb-0">
-                                <span
-                                    class="bg-orange-600 text-white text-[10px] font-bold px-2.5 py-0.5 rounded h-5 ms-1">
+                                <span class="bg-orange-600 text-white text-[10px] font-bold px-2.5 py-0.5 rounded h-5 ms-1">
                                     Direkomendasikan
                                 </span>
                             </div>
