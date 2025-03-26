@@ -43,7 +43,7 @@
                           </div><!--end col-->
 
                           <div class="lg:col-span-2 md:col-span-4">
-                              <h5 class="tracking-[1px] text-gray-100 font-semibold">Company</h5>
+                              {{-- <h5 class="tracking-[1px] text-gray-100 font-semibold">Company</h5>
                               <ul class="list-none footer-list mt-6">
                                   <li><a href="page-aboutus.html"
                                           class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i
@@ -66,11 +66,11 @@
                                   <li class="mt-[10px]"><a href="auth-login.html"
                                           class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i
                                               class="uil uil-angle-right-b"></i> Login</a></li>
-                              </ul>
+                              </ul> --}}
                           </div><!--end col-->
 
                           <div class="lg:col-span-3 md:col-span-4">
-                              <h5 class="tracking-[1px] text-gray-100 font-semibold">Usefull Links</h5>
+                              {{-- <h5 class="tracking-[1px] text-gray-100 font-semibold">Usefull Links</h5>
                               <ul class="list-none footer-list mt-6">
                                   <li><a href="page-terms.html"
                                           class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i
@@ -87,7 +87,7 @@
                                   <li class="mt-[10px]"><a href="widget.html"
                                           class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i
                                               class="uil uil-angle-right-b"></i> Widget</a></li>
-                              </ul>
+                              </ul> --}}
                           </div><!--end col-->
 
                           <div class="lg:col-span-3 md:col-span-4">
@@ -124,13 +124,14 @@
                       <p class="mb-0">©
                           <script>
                               document.write(new Date().getFullYear())
-                          </script> Techwind. Design with <i class="mdi mdi-heart text-red-600"></i> by
-                          <a href="https://shreethemes.in/" target="_blank" class="text-reset">Shreethemes</a>.
+                          </script> 
+                          {{-- Techwind. Design with <i class="mdi mdi-heart text-red-600"></i> by --}}
+                          <a href="https://soulofjava.github.io/myportofolio/" target="_blank" class="text-reset">TIM BAYANGAN</a>.
                       </p>
                   </div>
 
                   <ul class="list-none md:text-end text-center mt-6 md:mt-0">
-                      <li class="inline"><a href=""><img src="assets/images/payments/american-ex.png"
+                      {{-- <li class="inline"><a href=""><img src="assets/images/payments/american-ex.png"
                                   class="max-h-6 inline" title="American Express" alt=""></a></li>
                       <li class="inline"><a href=""><img src="assets/images/payments/discover.png"
                                   class="max-h-6 inline" title="Discover" alt=""></a></li>
@@ -139,7 +140,7 @@
                       <li class="inline"><a href=""><img src="assets/images/payments/paypal.png"
                                   class="max-h-6 inline" title="Paypal" alt=""></a></li>
                       <li class="inline"><a href=""><img src="assets/images/payments/visa.png"
-                                  class="max-h-6 inline" title="Visa" alt=""></a></li>
+                                  class="max-h-6 inline" title="Visa" alt=""></a></li> --}}
                   </ul>
               </div><!--end grid-->
           </div><!--end container-->
@@ -148,7 +149,7 @@
   <!-- Footer End -->
 
   <!-- Start Cookie Popup -->
-  <div
+  {{-- <div
       class="cookie-popup fixed max-w-lg bottom-3 end-3 start-3 sm:start-0 mx-auto bg-white dark:bg-slate-900 shadow dark:shadow-gray-800 rounded-md py-5 px-6 z-50">
       <p class="text-slate-400">This website uses cookies to provide you with a great user experience. By using it, you
           accept our <a href="https://shreethemes.in" target="_blank"
@@ -157,7 +158,7 @@
           <button class="absolute border-none bg-none p-0 cursor-pointer font-semibold top-2 end-2"><i
                   class="uil uil-times text-dark dark:text-slate-200 text-2xl"></i></button>
       </div>
-  </div>
+  </div> --}}
   <!--Note: Cookies Js including in plugins.init.js (path like; assets/js/plugins.init.js) and Cookies css including in _helper.scss (path like; scss/_helper.scss)-->
   <!-- End Cookie Popup -->
 
@@ -168,7 +169,7 @@
   <!-- Back to top -->
 
   <!-- Switcher -->
-  <div class="fixed top-[30%] -right-2 z-50">
+  {{-- <div class="fixed top-[30%] -right-2 z-50">
       <span class="relative inline-block rotate-90">
           <input type="checkbox" class="checkbox opacity-0 absolute" id="chk" />
           <label
@@ -179,16 +180,16 @@
               <span class="ball bg-white dark:bg-slate-900 rounded-full absolute top-[2px] left-[2px] size-7"></span>
           </label>
       </span>
-  </div>
+  </div> --}}
   <!-- Switcher -->
 
   <!-- LTR & RTL Mode Code -->
-  <div class="fixed top-[40%] -right-3 z-50">
+  {{-- <div class="fixed top-[40%] -right-3 z-50">
       <a href="" id="switchRtl">
           <span
               class="py-1 px-3 relative inline-block rounded-t-md -rotate-90 bg-white dark:bg-slate-900 shadow-md dark:shadow dark:shadow-gray-800 font-bold rtl:block ltr:hidden">LTR</span>
           <span
               class="py-1 px-3 relative inline-block rounded-t-md -rotate-90 bg-white dark:bg-slate-900 shadow-md dark:shadow dark:shadow-gray-800 font-bold ltr:block rtl:hidden">RTL</span>
       </a>
-  </div>
+  </div> --}}
   <!-- LTR & RTL Mode Code -->
