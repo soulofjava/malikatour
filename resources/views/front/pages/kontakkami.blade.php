@@ -3,7 +3,7 @@
     <section class="md:h-screen w-full">
         <div class="container-fluid relative">
             <div class="grid grid-cols-1">
-                <div class="border-0 w-full">
+                <div class="grayscale border-0 w-full">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15854.152215999416!2d109.9140206!3d-7.2825185!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f6df11c9f3039%3A0x0!2zN8KwMTYnNTcuMSJTIDEwOcKwNTQnNTkuNyJF!5e0!3m2!1sen!2sid!4v1685296800000!5m2!1sen!2sid"
                         style="border:0" class="h-screen w-full" allowfullscreen loading="lazy"

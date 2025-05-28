@@ -1,8 +1,8 @@
 @extends('front.layout.app')
 @section('content')
     <!-- Start Home -->
-    <section class="relative md:py-56 py-44 bg-[url('../../assets/images/photography/photographer.jpg')] bg-cover jarallax"
-        data-jarallax data-speed="0.5" id="aboutme">
+    <section style="background-image: url('/FullSizeRender.jpg'); background-size: cover;"
+        class="relative md:py-56 py-44 bg-cover jarallax" data-jarallax data-speed="0.5" id="aboutme">
         <div
             class="absolute inset-0 h-full w-full bg-gradient-to-t to-transparent via-white/80 dark:via-slate-900/80 from-white dark:from-slate-900">
         </div>

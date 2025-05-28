@@ -93,7 +93,7 @@
 
     <!-- Start -->
     <section class="relative md:py-56 py-44 jarallax"
-        style="background-image: url('/assets/images/photography/photographer.jpg'); background-size: cover;" data-jarallax
+        style="background-image: url('/IMG_5635_Original.jpg'); background-size: cover;" data-jarallax
         data-speed="0.5" id="aboutme">
 
         <div
