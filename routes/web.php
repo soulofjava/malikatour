@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Models\Homestay;
+use App\Models\SiteSetting;
 use App\Models\Tour;
 
 Route::get('/tour/{tour}', function (Tour $tour) {
@@ -13,5 +14,8 @@ Route::get('/homestay/{homestay}', function (Homestay $homestay) {
 })->name('homestay.detail');
 
 Route::get('/', function () {
-    return view('front.pages.index');
+    $data = SiteSetting::first();
+    return view('front.pages.index', [
+        'data' => $data,
+    ]);
 });

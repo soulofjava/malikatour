@@ -41,11 +41,8 @@ class SiteSettingResource extends Resource
                 TextInput::make('instagram')
                     ->label('Instagram'),
 
-                TextInput::make('youtube')
-                    ->label('YouTube'),
-
-                TextInput::make('facebook')
-                    ->label('Facebook'),
+                TextInput::make('tiktok')
+                    ->label('TikTok'),
             ]);
     }
 

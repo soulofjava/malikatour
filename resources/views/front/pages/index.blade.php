@@ -100,7 +100,7 @@
             <h3 class="md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Jack Jeffrey</h3>
         </div>
     </section>
-    !--end section-->
+    <!--end section-->
 
     <section class="relative pt-8 md:pb-24 py-16">
         <div class="container relative">

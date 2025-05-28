@@ -14,9 +14,11 @@ class SiteSeeder extends Seeder
     public function run(): void
     {
         SiteSetting::create([
-            'email' => 'email@email.com',
-            'alamat' => 'Wonosobo',
-            'kontak' => '085643710007',
+            'email' => 'andalas.tourorganizer@gmail.com',
+            'alamat' => 'Menjer RT.4 / RW.2 Desa Menjer, Kecamatan Garung, Kabupaten Wonosobo',
+            'kontak' => '0821-2292-2673 / 0852-9246-3786',
+            'instagram' => 'https://www.instagram.com/andalas.tourorganizer?igsh=MWhxcHc5ZWh1ZWhpcA%3D%3D&utm_source=qr',
+            'tiktok' => 'https://www.tiktok.com/@andalas.tourorganizer?_t=ZS-8wj8z4p5vgz&_r=1',
         ]);
     }
 }

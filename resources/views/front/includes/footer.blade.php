@@ -10,40 +10,27 @@
                     <div class="py-[60px] px-0">
                         <div class="grid grid-cols-1">
                             <div>
-                                <a href="mailto:contact@example.com"
-                                    class="relative inline-block font-semibold tracking-wide align-middle text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-2xl text-slate-900 dark:text-white dark:hover:text-white hover:text-indigo-600 after:bg-indigo-600 dark:after:bg-white duration-500 ease-in-out">contact@example.com</a>
+                                <a href="mailto:{{ $data->email }}"
+                                    class="relative inline-block font-semibold tracking-wide align-middle text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-2xl text-slate-900 dark:text-white dark:hover:text-white hover:text-indigo-600 after:bg-indigo-600 dark:after:bg-white duration-500 ease-in-out">{{ $data->email }}</a>
                             </div>
-                            <p class="mt-6 max-w-2xl">As a Freelance Designer & Developer, I am here to make you stand
-                                out in the digital world and my passion for design and your vision will ensure a great
-                                end result.</p>
+                            <p class="mt-6 max-w-2xl">{{ $data->alamat }}</p>
                             <ul class="list-none mt-6">
-                                <li class="inline"><a href="https://1.envato.market/techwind" target="_blank"
-                                        class="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center text-gray-400 hover:text-white border border-gray-100 dark:border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i
-                                            class="uil uil-shopping-cart align-middle" title="Buy Now"></i></a></li>
-                                <li class="inline"><a href="https://dribbble.com/shreethemes" target="_blank"
-                                        class="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center text-gray-400 hover:text-white border border-gray-100 dark:border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i
-                                            class="uil uil-dribbble align-middle" title="dribbble"></i></a></li>
-                                <li class="inline"><a href="https://www.behance.net/shreethemes" target="_blank"
-                                        class="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center text-gray-400 hover:text-white border border-gray-100 dark:border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i
-                                            class="uil uil-behance" title="Behance"></i></a></li>
-                                <li class="inline"><a href="http://linkedin.com/company/shreethemes" target="_blank"
-                                        class="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center text-gray-400 hover:text-white border border-gray-100 dark:border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i
-                                            class="uil uil-linkedin" title="Linkedin"></i></a></li>
-                                <li class="inline"><a href="https://www.facebook.com/shreethemes" target="_blank"
-                                        class="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center text-gray-400 hover:text-white border border-gray-100 dark:border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i
-                                            class="uil uil-facebook-f align-middle" title="facebook"></i></a></li>
-                                <li class="inline"><a href="https://www.instagram.com/shreethemes/" target="_blank"
+                                <li class="inline"><a href="{{ $data->instagram }}" target="_blank"
                                         class="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center text-gray-400 hover:text-white border border-gray-100 dark:border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i
                                             class="uil uil-instagram align-middle" title="instagram"></i></a></li>
-                                <li class="inline"><a href="https://twitter.com/shreethemes" target="_blank"
-                                        class="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center text-gray-400 hover:text-white border border-gray-100 dark:border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i
-                                            class="uil uil-twitter align-middle" title="twitter"></i></a></li>
-                                <li class="inline"><a href="mailto:support@shreethemes.in"
-                                        class="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center text-gray-400 hover:text-white border border-gray-100 dark:border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i
-                                            class="uil uil-envelope align-middle" title="email"></i></a></li>
-                                <li class="inline"><a href="https://forms.gle/QkTueCikDGqJnbky9" target="_blank"
-                                        class="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center text-gray-400 hover:text-white border border-gray-100 dark:border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i
-                                            class="uil uil-file align-middle" title="customization"></i></a></li>
+                                <li class="inline">
+                                    <a href="{{ $data->tiktok }}" target="_blank"
+                                        class="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center text-gray-400 hover:text-white border border-gray-100 dark:border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"
+                                        title="tiktok">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                                            <path
+                                                d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z" />
+                                        </svg>
+                                    </a>
+                                </li>
+
+
                             </ul><!--end icon-->
                         </div><!--end grid-->
                     </div><!--end col-->
@@ -58,8 +45,9 @@
                         <p class="mb-0">©
                             <script>
                                 document.write(new Date().getFullYear())
-                            </script> Techwind. Design with <i class="mdi mdi-heart text-red-600"></i>
-                            by <a href="https://shreethemes.in/" target="_blank" class="text-reset">Shreethemes</a>.
+                            </script> <i class="mdi mdi-heart text-red-600"></i>
+                            by <a href="https://soulofjava.github.io/myportofolio/" target="_blank"
+                                class="text-reset">Isa Maulana Tantra</a>.
                         </p>
                     </div>
                 </div><!--end grid-->
@@ -104,12 +92,12 @@
     <!-- Switcher -->
 
     <!-- LTR & RTL Mode Code -->
-    <div class="fixed top-[40%] -right-3 z-50">
+    {{-- <div class="fixed top-[40%] -right-3 z-50">
         <a href="" id="switchRtl">
             <span
                 class="py-1 px-3 relative inline-block rounded-t-md -rotate-90 bg-white dark:bg-slate-900 shadow-md dark:shadow dark:shadow-gray-800 font-bold rtl:block ltr:hidden">LTR</span>
             <span
                 class="py-1 px-3 relative inline-block rounded-t-md -rotate-90 bg-white dark:bg-slate-900 shadow-md dark:shadow dark:shadow-gray-800 font-bold ltr:block rtl:hidden">RTL</span>
         </a>
-    </div>
+    </div> --}}
     <!-- LTR & RTL Mode Code -->
