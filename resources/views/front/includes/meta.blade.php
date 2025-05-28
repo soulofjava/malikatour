@@ -11,3 +11,5 @@
 <meta name="email" content="{{ $data->email }}">
 <meta name="version" content="2.2.0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- Favicon -->
+<link rel="icon" href="{{ asset('Logo.PNG') }}" type="image/x-icon" />

@@ -55,10 +55,10 @@
          <div id="navigation">
              <!-- Navigation Menu-->
              <ul class="navigation-menu nav-light justify-end">
-                 <li><a href="index-photography.html" class="sub-menu-item">Home</a></li>
-                 <li><a href="photography-about.html" class="sub-menu-item">About Us</a></li>
+                 <li><a href="index-photography.html" class="sub-menu-item">Beranda</a></li>
+                 <li><a href="photography-about.html" class="sub-menu-item">Tentang Kami</a></li>
                  <li><a href="photography-portfolio.html" class="sub-menu-item">Portfolio</a></li>
-                 <li><a href="contact-two.html" class="sub-menu-item">Contact</a></li>
+                 <li><a href="contact-two.html" class="sub-menu-item">Kontak</a></li>
              </ul><!--end navigation menu-->
          </div><!--end navigation-->
      </div><!--end container-->

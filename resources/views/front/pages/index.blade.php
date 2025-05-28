@@ -22,11 +22,14 @@
     <section class="relative md:py-24 py-16">
         <div class="container relative">
             <div class="grid grid-cols-1 pb-8 text-center">
-                <h3 class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Photography</h3>
+                <h3 class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Layanan Wisata</h3>
 
-                <p class="text-slate-400 max-w-2xl mx-auto">As a Freelance Designer & Developer, I am here to make you
-                    stand out in the digital world and my passion for design and your vision will ensure a great end
-                    result.</p>
+                <p class="text-slate-400 max-w-2xl mx-auto">
+                    Andalas Tour Organizer siap membantu mewujudkan perjalanan liburan Anda yang berkesan di Wonosobo.
+                    Dengan pengalaman dan dedikasi kami, kami pastikan paket wisata yang kami tawarkan sesuai dengan
+                    keinginan dan kebutuhan Anda.
+                </p>
+
             </div>
             <!--end grid-->
 
@@ -64,7 +67,7 @@
                     </div>
 
                     <div class="absolute text-center p-6 bottom-0 start-0 end-0">
-                        <a href="contact-two.html" class="font-semibold text-lg">Contact <i
+                        <a href="contact-two.html" class="font-semibold text-lg">Kontak <i
                                 class="uil uil-arrow-up-right"></i></a>
                     </div>
                 </div>
@@ -77,7 +80,7 @@
                     </div>
 
                     <div class="absolute text-center p-6 bottom-0 start-0 end-0">
-                        <a href="#aboutme" class="font-semibold text-lg">About Me <i class="uil uil-arrow-up-right"></i></a>
+                        <a href="#aboutme" class="font-semibold text-lg">Tentang Kami <i class="uil uil-arrow-up-right"></i></a>
                     </div>
                 </div>
                 <!--end content-->
@@ -97,7 +100,7 @@
         </div>
 
         <div class="absolute text-center p-6 bottom-0 start-0 end-0">
-            <h3 class="md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Jack Jeffrey</h3>
+            <h3 class="md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Andalas Tour Organizer</h3>
         </div>
     </section>
     <!--end section-->
@@ -106,30 +109,35 @@
         <div class="container relative">
             <div class="flex justify-center">
                 <div class="lg:max-w-768 w-full text-center">
-                    <p>The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th
-                        century. Lorem Ipsum is composed in a pseudo-Latin language which more or less corresponds to
-                        'proper' Latin. It contains a series of real Latin words.</p>
-                    <p class="text-slate-400 mt-6">This ancient dummy text is also incomprehensible, but it imitates
-                        the rhythm of most European languages in Latin script. The advantage of its Latin origin and the
-                        relative meaninglessness of Lorum Ipsum is that the text does not attract attention to itself or
-                        distract the viewer's attention from the layout.</p>
-                    <p class="text-slate-400 mt-6">Moreover, in Latin only words at the beginning of sentences are
-                        capitalized; this means that Lorem Ipsum cannot accurately represent, for example, German, in
-                        which all nouns are capitalized. Thus, Lorem Ipsum has only limited suitability as a visual
-                        filler for German texts.</p>
-                    <p class="text-slate-400 mt-6">If the fill text is intended to illustrate the characteristics of
-                        different typefaces, it sometimes makes sense to select texts containing the various letters and
-                        symbols specific to the output language.</p>
-                    <p class="text-slate-400 mt-6">It seems that only fragments of the original text remain in the
-                        Lorem Ipsum texts used today. One may speculate that over the course of time certain letters
-                        were added or deleted at various positions within the text. This might also explain why one can
-                        now find slightly different versions. Due to the age of the Lorem Ipsum text there are no
-                        copyright issues to contend with.</p>
+                    <p>Perkenankan kami memperkenalkan diri. Kami adalah Andalas Tour Organizer (NIB. 0804250038312),
+                        penyedia jasa pelayanan pariwisata yang beralamat di Menjer RT004 / RW002, Kecamatan Garung,
+                        Kabupaten Wonosobo. Kami bergerak di bidang penyelenggaraan paket wisata berkualitas yang siap
+                        menghadirkan pengalaman perjalanan tak terlupakan bagi Anda.</p>
+
+                    <p class="text-slate-400 mt-6">Andalas Tour Organizer merupakan biro pariwisata terkemuka di Kabupaten
+                        Wonosobo, khususnya untuk wilayah Dieng dan sekitarnya. Kami menyediakan berbagai paket wisata yang
+                        dapat disesuaikan berdasarkan jumlah dan jenis obyek wisata yang Anda pilih, dengan harga kompetitif
+                        dan transparan.</p>
+
+                    <p class="text-slate-400 mt-6">Sebagai agen wisata profesional, kami didukung oleh tim berpengalaman dan
+                        armada transportasi yang andal, siap melayani kebutuhan perjalanan Anda dengan nyaman dan aman. Kami
+                        bangga menjadi partner terpercaya dalam menjelajahi keindahan alam dan budaya Wonosobo.</p>
+
+                    <p class="text-slate-400 mt-6">Website kami dirancang modern dan responsif, memudahkan Anda dalam
+                        mencari informasi paket wisata, melakukan pemesanan, dan mendapatkan update terbaru tentang
+                        destinasi menarik di Wonosobo dan Dieng. Dengan Andalas Tour Organizer, Anda tak hanya berwisata,
+                        tapi juga merasakan pengalaman penuh makna.</p>
+
+                    <p class="text-slate-400 mt-6">Merupakan kehormatan bagi kami untuk dipercaya menjadi bagian dari
+                        perjalanan wisata Anda. Demikian proposal penawaran paket wisata dari kami. Atas perhatian dan
+                        kepercayaan Anda, kami ucapkan terima kasih sebesar-besarnya.</p>
 
                     <div class="mt-6 text-center">
-                        <a href="photography-about.html"
-                            class="relative inline-block font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-slate-400 dark:text-white/70 dark:hover:text-white hover:text-indigo-600 after:bg-indigo-600 dark:after:bg-white duration-500 ease-in-out">Read
-                            More <i class="uil uil-arrow-right"></i></a>
+                        <a href="/Proposal%20Penawaran%20Andalas.pdf" target="_blank"
+                            class="relative inline-block font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-slate-400 dark:text-white/70 dark:hover:text-white hover:text-indigo-600 after:bg-indigo-600 dark:after:bg-white duration-500 ease-in-out">
+                            Baca Selengkapnya
+                            <i class="uil uil-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
             </div>
