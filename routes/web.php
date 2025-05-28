@@ -19,3 +19,24 @@ Route::get('/', function () {
         'data' => $data,
     ]);
 });
+
+Route::get('tentangkami', function () {
+    $data = SiteSetting::first();
+    return view('front.pages.tentang', [
+        'data' => $data,
+    ]);
+});
+
+Route::get('portofolio', function () {
+    $data = SiteSetting::first();
+    return view('front.pages.portofolio', [
+        'data' => $data,
+    ]);
+});
+
+Route::get('kontakkami', function () {
+    $data = SiteSetting::first();
+    return view('front.pages.kontakkami', [
+        'data' => $data,
+    ]);
+});

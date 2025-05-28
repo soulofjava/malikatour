@@ -13,12 +13,14 @@
  <nav id="topnav" class="defaultscroll is-sticky">
      <div class="container relative">
          <!-- Logo container-->
-         <a class="logo" href="index.html">
+         <a class="logo" href="{{ url('/') }}">
              <span class="inline-block dark:hidden">
-                 <img src="{{ asset('assets/images/logo-dark.png') }}" class="l-dark" height="24" alt="">
-                 <img src="{{ asset('assets/images/logo-light.png') }}" class="l-light" height="24" alt="">
+                 <img src="{{ asset('Logo-removebg-preview.png') }}" class="l-dark" height="50" width="50"
+                     alt="">
+                 <img src="{{ asset('Logo.PNG') }}" class="l-light" height="50" width="50" alt="">
              </span>
-             <img src="{{ asset('assets/images/logo-light.png') }}" height="24" class="hidden dark:inline-block" alt="">
+             <img src="{{ asset('Logo-removebg-preview.png') }}" height="50" width="50"
+                 class="hidden dark:inline-block" alt="">
          </a>
 
          <!-- End Logo container-->
@@ -55,10 +57,10 @@
          <div id="navigation">
              <!-- Navigation Menu-->
              <ul class="navigation-menu nav-light justify-end">
-                 <li><a href="index-photography.html" class="sub-menu-item">Beranda</a></li>
-                 <li><a href="photography-about.html" class="sub-menu-item">Tentang Kami</a></li>
-                 <li><a href="photography-portfolio.html" class="sub-menu-item">Portfolio</a></li>
-                 <li><a href="contact-two.html" class="sub-menu-item">Kontak</a></li>
+                 <li><a href="{{ url('/') }}" class="sub-menu-item">Beranda</a></li>
+                 <li><a href="{{ url('tentangkami') }}" class="sub-menu-item">Tentang Kami</a></li>
+                 <li><a href="{{ url('portofolio') }}" class="sub-menu-item">Portfolio</a></li>
+                 <li><a href="{{ url('kontakkami') }}" class="sub-menu-item">Alamat Kami</a></li>
              </ul><!--end navigation menu-->
          </div><!--end navigation-->
      </div><!--end container-->

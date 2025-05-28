@@ -13,7 +13,14 @@
                                 <a href="mailto:{{ $data->email }}"
                                     class="relative inline-block font-semibold tracking-wide align-middle text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-2xl text-slate-900 dark:text-white dark:hover:text-white hover:text-indigo-600 after:bg-indigo-600 dark:after:bg-white duration-500 ease-in-out">{{ $data->email }}</a>
                             </div>
-                            <p class="mt-6 max-w-2xl">{{ $data->alamat }}</p>
+                            <p class="mt-6 max-w-2xl">
+                                <a href="https://www.google.com/maps?q=-7.2825185,109.9165955" target="_blank"
+                                    rel="noopener noreferrer" class="text-indigo-600 hover:underline">
+                                    {{ $data->alamat }}
+                                </a>
+                            </p>
+
+
                             <ul class="list-none mt-6">
                                 <li class="inline"><a href="{{ $data->instagram }}" target="_blank"
                                         class="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center text-gray-400 hover:text-white border border-gray-100 dark:border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i

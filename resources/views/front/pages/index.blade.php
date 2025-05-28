@@ -5,7 +5,7 @@
         <div class="absolute inset-0 h-full w-full jarallax" data-jarallax data-speed="0.8"
             style="background: url('assets/images/photography/first.jpg') bottom;"></div>
         <div class="absolute inset-0 h-full w-full md:block hidden jarallax" data-jarallax data-speed="0.5"
-            style="background: url('assets/images/photography/hero-text-lg.png') center;"></div>
+            style="background: url('image__1_-removebg-preview.png') center;"></div>
         <div class="absolute inset-0 h-full w-full block md:hidden jarallax" data-jarallax data-speed="0.5"
             style="background: url('assets/images/photography/hero-text-sm.png') center;"></div>
         <div class="absolute inset-0 h-full w-full jarallax" data-jarallax data-speed="1.1"
@@ -22,7 +22,7 @@
     <section class="relative md:py-24 py-16">
         <div class="container relative">
             <div class="grid grid-cols-1 pb-8 text-center">
-                <h3 class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Layanan Wisata</h3>
+                <h3 class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Selamat Datang</h3>
 
                 <p class="text-slate-400 max-w-2xl mx-auto">
                     Andalas Tour Organizer siap membantu mewujudkan perjalanan liburan Anda yang berkesan di Wonosobo.
@@ -41,7 +41,7 @@
                     </div>
 
                     <div class="absolute text-center p-6 bottom-0 start-0 end-0">
-                        <a href="photography-about.html" class="font-semibold text-lg">Jack Jeffrey <i
+                        <a href="{{ url('tentangkami') }}" class="font-semibold text-lg">Tentang Kami<i
                                 class="uil uil-arrow-up-right"></i></a>
                     </div>
                 </div>
@@ -54,7 +54,7 @@
                     </div>
 
                     <div class="absolute text-center p-6 bottom-0 start-0 end-0">
-                        <a href="photography-portfolio.html" class="font-semibold text-lg">Portfolio <i
+                        <a href="{{ url('portofolio') }}" class="font-semibold text-lg">Portfolio <i
                                 class="uil uil-arrow-up-right"></i></a>
                     </div>
                 </div>
@@ -67,7 +67,7 @@
                     </div>
 
                     <div class="absolute text-center p-6 bottom-0 start-0 end-0">
-                        <a href="contact-two.html" class="font-semibold text-lg">Kontak <i
+                        <a href="{{ url('kontakkami') }}" class="font-semibold text-lg">Alamat Kami <i
                                 class="uil uil-arrow-up-right"></i></a>
                     </div>
                 </div>
@@ -80,7 +80,7 @@
                     </div>
 
                     <div class="absolute text-center p-6 bottom-0 start-0 end-0">
-                        <a href="#aboutme" class="font-semibold text-lg">Tentang Kami <i class="uil uil-arrow-up-right"></i></a>
+                        <a href="#aboutme" class="font-semibold text-lg">Layanan <i class="uil uil-arrow-up-right"></i></a>
                     </div>
                 </div>
                 <!--end content-->
@@ -92,15 +92,16 @@
     <!--end section-->
 
     <!-- Start -->
-    <section
-        class="relative md:py-56 py-44 bg-[url('../../assets/images/photography/photographer.jpg') }}')] bg-cover jarallax"
-        data-jarallax data-speed="0.5" id="aboutme">
+    <section class="relative md:py-56 py-44 jarallax"
+        style="background-image: url('/assets/images/photography/photographer.jpg'); background-size: cover;" data-jarallax
+        data-speed="0.5" id="aboutme">
+
         <div
             class="absolute inset-0 h-full w-full bg-gradient-to-t to-transparent via-white/80 dark:via-slate-900/80 from-white dark:from-slate-900">
         </div>
 
         <div class="absolute text-center p-6 bottom-0 start-0 end-0">
-            <h3 class="md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Andalas Tour Organizer</h3>
+            <h3 class="md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">"Tak Kenal Maka Tak Sayang"</h3>
         </div>
     </section>
     <!--end section-->
@@ -147,12 +148,16 @@
 
         <div class="container relative md:mt-24 mt-16">
             <div class="grid grid-cols-1 pb-8 text-center">
-                <h3 class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Portfolio /
-                    Photography</h3>
+                <h3 class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Paket Wisata & Layanan
+                    Kami</h3>
 
-                <p class="text-slate-400 max-w-2xl mx-auto">As a Freelance Designer & Developer, I am here to make you
-                    stand out in the digital world and my passion for design and your vision will ensure a great end
-                    result.</p>
+                <p class="text-slate-400 max-w-2xl mx-auto">
+                    Kami menyediakan berbagai paket wisata menarik di Wonosobo yang dirancang khusus untuk memenuhi
+                    kebutuhan liburan Anda.
+                    Tim profesional kami siap membantu Anda merencanakan perjalanan yang nyaman, seru, dan penuh kenangan
+                    indah.
+                </p>
+
             </div>
             <!--end grid-->
 
@@ -171,10 +176,10 @@
 
                 <div class="lg:w-1/4 md:w-1/3 p-1 picture-item" data-groups='["designing"]'>
                     <div class="group relative block overflow-hidden rounded-md duration-500">
-                        <img src="{{ asset('assets/images/photography/p2.jpg') }}" class="" alt="work-image">
+                        <img src="{{ asset('2B471F7A-305D-4702-BB41-D256D965587D.JPEG') }}" class="" alt="work-image">
                         <div
                             class="absolute top-1/2 -translate-y-1/2 start-0 end-0 text-center opacity-0 group-hover:opacity-100 duration-500">
-                            <a href="{{ asset('assets/images/photography/p2.jpg') }}"
+                            <a href="{{ asset('2B471F7A-305D-4702-BB41-D256D965587D.JPEG') }}"
                                 class="size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white lightbox"><i
                                     class="uil uil-camera"></i></a>
                         </div>
@@ -183,10 +188,11 @@
 
                 <div class="lg:w-1/4 md:w-1/3 p-1 picture-item" data-groups='["photography"]'>
                     <div class="group relative block overflow-hidden rounded-md duration-500">
-                        <img src="{{ asset('assets/images/photography/p3.jpg') }}" class="" alt="work-image">
+                        <img src="{{ asset('B9AC36F2-4F6A-4F6E-A669-7F2758CA2BB6.jpg') }}" class=""
+                            alt="work-image">
                         <div
                             class="absolute top-1/2 -translate-y-1/2 start-0 end-0 text-center opacity-0 group-hover:opacity-100 duration-500">
-                            <a href="{{ asset('assets/images/photography/p3.jpg') }}"
+                            <a href="{{ asset('B9AC36F2-4F6A-4F6E-A669-7F2758CA2BB6.jpg') }}"
                                 class="size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white lightbox"><i
                                     class="uil uil-camera"></i></a>
                         </div>
@@ -207,10 +213,11 @@
 
                 <div class="lg:w-1/4 md:w-1/3 p-1 picture-item" data-groups='["branding"]'>
                     <div class="group relative block overflow-hidden rounded-md duration-500">
-                        <img src="{{ asset('assets/images/photography/p5.jpg') }}" class="" alt="work-image">
+                        <img src="{{ asset('0A11E4B1-38A1-491A-B6AB-94F592BA3974.JPEG') }}" class=""
+                            alt="work-image">
                         <div
                             class="absolute top-1/2 -translate-y-1/2 start-0 end-0 text-center opacity-0 group-hover:opacity-100 duration-500">
-                            <a href="{{ asset('assets/images/photography/p5.jpg') }}"
+                            <a href="{{ asset('0A11E4B1-38A1-491A-B6AB-94F592BA3974.JPEG') }}"
                                 class="size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white lightbox"><i
                                     class="uil uil-camera"></i></a>
                         </div>
@@ -219,10 +226,10 @@
 
                 <div class="lg:w-1/4 md:w-1/3 p-1 picture-item" data-groups='["designing"]'>
                     <div class="group relative block overflow-hidden rounded-md duration-500">
-                        <img src="{{ asset('assets/images/photography/p7.jpg') }}" class="" alt="work-image">
+                        <img src="{{ asset('Jeep Dieng.PNG') }}" class="" alt="work-image">
                         <div
                             class="absolute top-1/2 -translate-y-1/2 start-0 end-0 text-center opacity-0 group-hover:opacity-100 duration-500">
-                            <a href="{{ asset('assets/images/photography/p7.jpg') }}"
+                            <a href="{{ asset('Jeep Dieng.PNG') }}"
                                 class="size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white lightbox"><i
                                     class="uil uil-camera"></i></a>
                         </div>
@@ -231,10 +238,10 @@
 
                 <div class="lg:w-1/4 md:w-1/3 p-1 picture-item" data-groups='["development"]'>
                     <div class="group relative block overflow-hidden rounded-md duration-500">
-                        <img src="{{ asset('assets/images/photography/p11.jpg') }}" class="" alt="work-image">
+                        <img src="{{ asset('SiKunir.jpg') }}" class="" alt="work-image">
                         <div
                             class="absolute top-1/2 -translate-y-1/2 start-0 end-0 text-center opacity-0 group-hover:opacity-100 duration-500">
-                            <a href="{{ asset('assets/images/photography/p11.jpg') }}"
+                            <a href="{{ asset('SiKunir.jpg') }}"
                                 class="size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white lightbox"><i
                                     class="uil uil-camera"></i></a>
                         </div>
@@ -258,8 +265,10 @@
             <div class="grid grid-cols-1 mt-8">
                 <div class="text-center">
                     <a href="photography-portfolio.html"
-                        class="relative inline-block font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-slate-400 dark:text-white/70 dark:hover:text-white hover:text-indigo-600 after:bg-indigo-600 dark:after:bg-white duration-500 ease-in-out">See
-                        More <i class="uil uil-arrow-right"></i></a>
+                        class="relative inline-block font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-slate-400 dark:text-white/70 dark:hover:text-white hover:text-indigo-600 after:bg-indigo-600 dark:after:bg-white duration-500 ease-in-out">
+                        Lihat Lebih Banyak
+                        <i class="uil uil-arrow-right"></i>
+                    </a>
                 </div>
             </div>
         </div>
