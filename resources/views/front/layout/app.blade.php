@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="light scroll-smooth" dir="ltr">
+<html lang="en" class="dark scroll-smooth" dir="ltr">
 
 <head>
     @include('front.includes.meta')
@@ -8,7 +8,7 @@
     @stack('after-style')
     <!-- Styles / Scripts -->
     @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
+        @vite([])
     @else
     @endif
 </head>
