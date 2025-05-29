@@ -48,11 +48,17 @@
                                 alam dan budaya secara optimal.
                             </p>
 
-                            <a href="https://wa.me/6282122922673?text=Halo%20Andalas%20Tour%20Organizer%2C%20saya%20mendapatkan%20nomor%20ini%20dari%20website%20Anda.%20Saya%20ingin%20bertanya%20lebih%20lanjut."
+                            <!-- Tombol Download Company Profile -->
+                            <a href="/Company%20Profile.pdf" download
+                                class="relative inline-block font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-slate-400 dark:text-white/70 dark:hover:text-white hover:text-indigo-600 after:bg-indigo-600 dark:after:bg-white duration-500 ease-in-out mt-6 mr-6">
+                                Download Company Profile <i class="uil uil-download-alt"></i>
+                            </a>
+
+                            {{-- <a href="https://wa.me/6282122922673?text=Halo%20Andalas%20Tour%20Organizer%2C%20saya%20mendapatkan%20nomor%20ini%20dari%20website%20Anda.%20Saya%20ingin%20bertanya%20lebih%20lanjut."
                                 target="_blank" rel="noopener noreferrer"
                                 class="relative inline-block font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-slate-400 dark:text-white/70 dark:hover:text-white hover:text-indigo-600 after:bg-indigo-600 dark:after:bg-white duration-500 ease-in-out mt-6">
                                 Hubungi Kami <i class="uil uil-arrow-right"></i>
-                            </a>
+                            </a> --}}
 
 
                         </div>

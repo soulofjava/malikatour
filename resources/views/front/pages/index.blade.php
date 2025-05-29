@@ -5,7 +5,7 @@
         <div class="absolute inset-0 h-full w-full jarallax" data-jarallax data-speed="0.8"
             style="background: url('assets/images/photography/first.jpg') bottom;"></div>
         <div class="absolute inset-0 h-full w-full md:block hidden jarallax" data-jarallax data-speed="0.5"
-            style="background: url('image__1_-removebg-preview.png') center;"></div>
+            style="background: url('ANDALAS (2).png') center;"></div>
         <div class="absolute inset-0 h-full w-full block md:hidden jarallax" data-jarallax data-speed="0.5"
             style="background: url('assets/images/photography/hero-text-sm.png') center;"></div>
         <div class="absolute inset-0 h-full w-full jarallax" data-jarallax data-speed="1.1"
@@ -35,7 +35,7 @@
 
             <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 mt-8 gap-[30px]">
                 <div class="relative overflow-hidden h-fit">
-                    <img src="{{ asset('assets/images/photography/01.jpg') }}" class="rounded-md" alt="">
+                    <img src="{{ asset('SiKunir.jpg') }}" class="rounded-md" alt="">
                     <div
                         class="absolute inset-0 h-full w-full bg-gradient-to-t to-transparent via-white/80 dark:via-slate-900/80 from-white dark:from-slate-900">
                     </div>
@@ -48,7 +48,7 @@
                 <!--end content-->
 
                 <div class="relative overflow-hidden h-fit lg:mt-16">
-                    <img src="{{ asset('assets/images/photography/02.jpg') }}" class="rounded-md" alt="">
+                    <img src="{{ asset('0A11E4B1-38A1-491A-B6AB-94F592BA3974.JPEG') }}" class="rounded-md" alt="">
                     <div
                         class="absolute inset-0 h-full w-full bg-gradient-to-t to-transparent via-white/80 dark:via-slate-900/80 from-white dark:from-slate-900">
                     </div>
@@ -61,7 +61,7 @@
                 <!--end content-->
 
                 <div class="relative overflow-hidden h-fit">
-                    <img src="{{ asset('assets/images/photography/03.jpg') }}" class="rounded-md" alt="">
+                    <img src="{{ asset('Taman langit.jpg') }}" class="rounded-md" alt="">
                     <div
                         class="absolute inset-0 h-full w-full bg-gradient-to-t to-transparent via-white/80 dark:via-slate-900/80 from-white dark:from-slate-900">
                     </div>
@@ -74,7 +74,7 @@
                 <!--end content-->
 
                 <div class="relative overflow-hidden h-fit lg:mt-16">
-                    <img src="{{ asset('assets/images/photography/04.jpg') }}" class="rounded-md" alt="">
+                    <img src="{{ asset('quality_restoration_20250529004757214.JPG') }}" class="rounded-md" alt="">
                     <div
                         class="absolute inset-0 h-full w-full bg-gradient-to-t to-transparent via-white/80 dark:via-slate-900/80 from-white dark:from-slate-900">
                     </div>
@@ -134,7 +134,7 @@
                         kepercayaan Anda, kami ucapkan terima kasih sebesar-besarnya.</p>
 
                     <div class="mt-6 text-center">
-                        <a href="/Proposal%20Penawaran%20Andalas.pdf" target="_blank"
+                        <a href="{{ url('tentangkami') }}"
                             class="relative inline-block font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-slate-400 dark:text-white/70 dark:hover:text-white hover:text-indigo-600 after:bg-indigo-600 dark:after:bg-white duration-500 ease-in-out">
                             Baca Selengkapnya
                             <i class="uil uil-arrow-right"></i>
@@ -146,7 +146,7 @@
         </div>
         <!--end container-->
 
-        <div class="container relative md:mt-24 mt-16">
+        {{-- <div class="container relative md:mt-24 mt-16">
             <div class="grid grid-cols-1 pb-8 text-center">
                 <h3 class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Paket Wisata & Layanan
                     Kami</h3>
@@ -164,10 +164,10 @@
             <div id="grid" class="md:flex justify-center mx-auto mt-4">
                 <div class="lg:w-1/4 md:w-1/3 p-1 picture-item" data-groups='["branding"]'>
                     <div class="group relative block overflow-hidden rounded-md duration-500">
-                        <img src="{{ asset('assets/images/photography/p1.jpg') }}" class="" alt="work-image">
+                        <img src="{{ asset('IMG_8808.jpg') }}" class="" alt="work-image">
                         <div
                             class="absolute top-1/2 -translate-y-1/2 start-0 end-0 text-center opacity-0 group-hover:opacity-100 duration-500">
-                            <a href="{{ asset('assets/images/photography/p1.jpg') }}"
+                            <a href="{{ asset('IMG_8808.jpg') }}"
                                 class="size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white lightbox"><i
                                     class="uil uil-camera"></i></a>
                         </div>
@@ -201,10 +201,10 @@
 
                 <div class="lg:w-1/4 md:w-1/3 p-1 picture-item" data-groups='["branding"]'>
                     <div class="group relative block overflow-hidden rounded-md duration-500">
-                        <img src="{{ asset('assets/images/photography/p4.jpg') }}" class="" alt="work-image">
+                        <img src="{{ asset('DSC_0112.JPEG') }}" class="" alt="work-image">
                         <div
                             class="absolute top-1/2 -translate-y-1/2 start-0 end-0 text-center opacity-0 group-hover:opacity-100 duration-500">
-                            <a href="{{ asset('assets/images/photography/p4.jpg') }}"
+                            <a href="{{ asset('DSC_0112.JPEG') }}"
                                 class="size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white lightbox"><i
                                     class="uil uil-camera"></i></a>
                         </div>
@@ -250,10 +250,10 @@
 
                 <div class="lg:w-1/4 md:w-1/3 p-1 picture-item" data-groups='["development"]'>
                     <div class="group relative block overflow-hidden rounded-md duration-500">
-                        <img src="{{ asset('assets/images/photography/p10.jpg') }}" class="" alt="work-image">
+                        <img src="{{ asset('IMG_8809.jpg') }}" class="" alt="work-image">
                         <div
                             class="absolute top-1/2 -translate-y-1/2 start-0 end-0 text-center opacity-0 group-hover:opacity-100 duration-500">
-                            <a href="{{ asset('assets/images/photography/p10.jpg') }}"
+                            <a href="{{ asset('IMG_8809.jpg') }}"
                                 class="size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white lightbox"><i
                                     class="uil uil-camera"></i></a>
                         </div>
@@ -271,7 +271,7 @@
                     </a>
                 </div>
             </div>
-        </div>
+        </div> --}}
         <!--end container-->
     </section>
     <!--end section-->

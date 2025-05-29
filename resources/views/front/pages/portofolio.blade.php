@@ -15,7 +15,7 @@
     <!-- Start Section-->
     <section class="relative md:py-24 py-16">
         <div class="container relative">
-            <div class="grid grid-cols-1 items-center gap-[30px]">
+            {{-- <div class="grid grid-cols-1 items-center gap-[30px]">
                 <div class="filters-group-wrap text-center">
                     <div class="filters-group">
                         <ul class="mb-0 list-none container-filter-border-bottom filter-options space-x-3">
@@ -32,9 +32,9 @@
                         </ul>
                     </div>
                 </div>
-            </div><!--grid-->
+            </div><!--grid--> --}}
 
-            <div id="grid" class="md:flex justify-center mx-auto mt-4">
+            {{-- <div id="grid" class="md:flex justify-center mx-auto mt-4">
                 <div class="lg:w-1/4 md:w-1/3 p-1 picture-item" data-groups='["branding"]'>
                     <div class="group relative block overflow-hidden rounded-md duration-500">
                         <img src="assets/images/photography/p1.jpg" class="" alt="work-image">
@@ -246,15 +246,115 @@
                         </div>
                     </div>
                 </div>
-            </div><!--end grid-->
+            </div> --}}
+            <!--end grid-->
+            <div id="grid" class="md:flex justify-center mx-auto mt-4">
+                <div class="lg:w-1/4 md:w-1/3 p-1 picture-item" data-groups='["branding"]'>
+                    <div class="group relative block overflow-hidden rounded-md duration-500">
+                        <img src="{{ asset('IMG_8808.jpg') }}" class="" alt="work-image">
+                        <div
+                            class="absolute top-1/2 -translate-y-1/2 start-0 end-0 text-center opacity-0 group-hover:opacity-100 duration-500">
+                            <a href="{{ asset('IMG_8808.jpg') }}"
+                                class="size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white lightbox"><i
+                                    class="uil uil-camera"></i></a>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="grid grid-cols-1 mt-8">
+                <div class="lg:w-1/4 md:w-1/3 p-1 picture-item" data-groups='["designing"]'>
+                    <div class="group relative block overflow-hidden rounded-md duration-500">
+                        <img src="{{ asset('2B471F7A-305D-4702-BB41-D256D965587D.JPEG') }}" class="" alt="work-image">
+                        <div
+                            class="absolute top-1/2 -translate-y-1/2 start-0 end-0 text-center opacity-0 group-hover:opacity-100 duration-500">
+                            <a href="{{ asset('2B471F7A-305D-4702-BB41-D256D965587D.JPEG') }}"
+                                class="size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white lightbox"><i
+                                    class="uil uil-camera"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/4 md:w-1/3 p-1 picture-item" data-groups='["photography"]'>
+                    <div class="group relative block overflow-hidden rounded-md duration-500">
+                        <img src="{{ asset('B9AC36F2-4F6A-4F6E-A669-7F2758CA2BB6.jpg') }}" class=""
+                            alt="work-image">
+                        <div
+                            class="absolute top-1/2 -translate-y-1/2 start-0 end-0 text-center opacity-0 group-hover:opacity-100 duration-500">
+                            <a href="{{ asset('B9AC36F2-4F6A-4F6E-A669-7F2758CA2BB6.jpg') }}"
+                                class="size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white lightbox"><i
+                                    class="uil uil-camera"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/4 md:w-1/3 p-1 picture-item" data-groups='["branding"]'>
+                    <div class="group relative block overflow-hidden rounded-md duration-500">
+                        <img src="{{ asset('DSC_0112.JPEG') }}" class="" alt="work-image">
+                        <div
+                            class="absolute top-1/2 -translate-y-1/2 start-0 end-0 text-center opacity-0 group-hover:opacity-100 duration-500">
+                            <a href="{{ asset('DSC_0112.JPEG') }}"
+                                class="size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white lightbox"><i
+                                    class="uil uil-camera"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/4 md:w-1/3 p-1 picture-item" data-groups='["branding"]'>
+                    <div class="group relative block overflow-hidden rounded-md duration-500">
+                        <img src="{{ asset('0A11E4B1-38A1-491A-B6AB-94F592BA3974.JPEG') }}" class=""
+                            alt="work-image">
+                        <div
+                            class="absolute top-1/2 -translate-y-1/2 start-0 end-0 text-center opacity-0 group-hover:opacity-100 duration-500">
+                            <a href="{{ asset('0A11E4B1-38A1-491A-B6AB-94F592BA3974.JPEG') }}"
+                                class="size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white lightbox"><i
+                                    class="uil uil-camera"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/4 md:w-1/3 p-1 picture-item" data-groups='["designing"]'>
+                    <div class="group relative block overflow-hidden rounded-md duration-500">
+                        <img src="{{ asset('Jeep Dieng.PNG') }}" class="" alt="work-image">
+                        <div
+                            class="absolute top-1/2 -translate-y-1/2 start-0 end-0 text-center opacity-0 group-hover:opacity-100 duration-500">
+                            <a href="{{ asset('Jeep Dieng.PNG') }}"
+                                class="size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white lightbox"><i
+                                    class="uil uil-camera"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/4 md:w-1/3 p-1 picture-item" data-groups='["development"]'>
+                    <div class="group relative block overflow-hidden rounded-md duration-500">
+                        <img src="{{ asset('SiKunir.jpg') }}" class="" alt="work-image">
+                        <div
+                            class="absolute top-1/2 -translate-y-1/2 start-0 end-0 text-center opacity-0 group-hover:opacity-100 duration-500">
+                            <a href="{{ asset('SiKunir.jpg') }}"
+                                class="size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white lightbox"><i
+                                    class="uil uil-camera"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/4 md:w-1/3 p-1 picture-item" data-groups='["development"]'>
+                    <div class="group relative block overflow-hidden rounded-md duration-500">
+                        <img src="{{ asset('IMG_8809.jpg') }}" class="" alt="work-image">
+                        <div
+                            class="absolute top-1/2 -translate-y-1/2 start-0 end-0 text-center opacity-0 group-hover:opacity-100 duration-500">
+                            <a href="{{ asset('IMG_8809.jpg') }}"
+                                class="size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white lightbox"><i
+                                    class="uil uil-camera"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {{-- <div class="grid grid-cols-1 mt-8">
                 <div class="text-center">
                     <a href="photography-portfolio.html"
                         class="relative inline-block font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-slate-400 dark:text-white/70 dark:hover:text-white hover:text-indigo-600 after:bg-indigo-600 dark:after:bg-white duration-500 ease-in-out">See
                         More <i class="uil uil-arrow-right"></i></a>
                 </div>
-            </div>
+            </div> --}}
         </div><!--end container-->
     </section><!--end section-->
 @endsection
