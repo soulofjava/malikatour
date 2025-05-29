@@ -80,7 +80,7 @@
                     </div>
 
                     <div class="absolute text-center p-6 bottom-0 start-0 end-0">
-                        <a href="#aboutme" class="font-semibold text-lg">Layanan <i class="uil uil-arrow-up-right"></i></a>
+                        <a href="{{ url('layanan') }}" class="font-semibold text-lg">Layanan <i class="uil uil-arrow-up-right"></i></a>
                     </div>
                 </div>
                 <!--end content-->

@@ -61,6 +61,7 @@
                  <li><a href="{{ url('tentangkami') }}" class="sub-menu-item">Tentang Kami</a></li>
                  <li><a href="{{ url('portofolio') }}" class="sub-menu-item">Portfolio</a></li>
                  <li><a href="{{ url('kontakkami') }}" class="sub-menu-item">Alamat Kami</a></li>
+                 <li><a href="{{ url('layanan') }}" class="sub-menu-item">Layanan</a></li>
              </ul><!--end navigation menu-->
          </div><!--end navigation-->
      </div><!--end container-->
