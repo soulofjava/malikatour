@@ -125,7 +125,7 @@
                                         {{ $item->title }}
                                     </a>
                                     <p class="text-sm text-slate-400">
-                                        Mulai dari Rp {{ number_format($tour->price, 0, ',', '.') }}
+                                        Mulai dari Rp {{ number_format($item->price, 0, ',', '.') }}
                                     </p>
                                 </div>
                             </div>
