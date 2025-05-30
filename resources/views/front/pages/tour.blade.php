@@ -76,7 +76,7 @@
 
                         {{-- Tombol WhatsApp --}}
                         @php
-                            $nomorAsli = $data?->whatsapp ? preg_replace('/[^0-9]/', '', $site->whatsapp) : null;
+                            $nomorAsli = $data?->whatsapp ? preg_replace('/[^0-9]/', '', $data->whatsapp) : null;
                             $nomorWa =
                                 $nomorAsli && str_starts_with($nomorAsli, '0')
                                     ? '62' . substr($nomorAsli, 1)
