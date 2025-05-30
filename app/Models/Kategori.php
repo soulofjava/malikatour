@@ -4,11 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Homestay extends Model
+class Kategori extends Model
 {
     protected $guarded = [];
-
-    protected $casts = [
-        'gambar' => 'array',
-    ];
 }

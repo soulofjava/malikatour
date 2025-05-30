@@ -26,6 +26,18 @@ class TourResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-map';
 
+    protected static ?string $navigationLabel = 'Paket Wisata';
+
+    public static function getPluralLabel(): string
+    {
+        return 'Paket Wisata';
+    }
+
+    public static function getLabel(): string
+    {
+        return 'Paket Wisata';
+    }
+    
     public static function form(Form $form): Form
     {
         return $form

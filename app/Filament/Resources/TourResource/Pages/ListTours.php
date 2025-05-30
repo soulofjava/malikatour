@@ -16,4 +16,9 @@ class ListTours extends ListRecords
             Actions\CreateAction::make(),
         ];
     }
+
+    public function getBreadcrumb(): string
+    {
+        return 'List Paket Wisata';
+    }
 }

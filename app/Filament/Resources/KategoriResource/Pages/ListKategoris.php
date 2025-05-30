@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Filament\Resources\HomestayResource\Pages;
+namespace App\Filament\Resources\KategoriResource\Pages;
 
-use App\Filament\Resources\HomestayResource;
+use App\Filament\Resources\KategoriResource;
 use Filament\Actions;
 use Filament\Resources\Pages\ListRecords;
 
-class ListHomestays extends ListRecords
+class ListKategoris extends ListRecords
 {
-    protected static string $resource = HomestayResource::class;
+    protected static string $resource = KategoriResource::class;
 
     protected function getHeaderActions(): array
     {

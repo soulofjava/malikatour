@@ -11,23 +11,19 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('homestays', function (Blueprint $table) {
+        Schema::create('kategoris', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
-            $table->text('deskripsi')->nullable();
-            $table->decimal('harga_sewa', 12, 2);
-            $table->json('gambar')->nullable(); // untuk multiple images
-            $table->string('latitude')->nullable()->default('-7.356823979078527');
-            $table->string('longitude')->nullable()->default('109.90581334769975');
             $table->timestamps();
         });
     }
+
 
     /**
      * Reverse the migrations.
      */
     public function down(): void
     {
-        Schema::dropIfExists('homestays');
+        Schema::dropIfExists('kategoris');
     }
 };
