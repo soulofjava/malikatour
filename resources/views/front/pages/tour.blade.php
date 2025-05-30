@@ -82,7 +82,9 @@
                                     ? '62' . substr($nomorAsli, 1)
                                     : $nomorAsli;
                             $pesan = urlencode(
-                                "Halo, saya tertarik dengan paket tour *{$tour->title}*. Bisa kirim informasi lebih lanjut?",
+                                "Halo, saya tertarik dengan paket tour *{$tour->title}*. Bisa kirim informasi lebih lanjut?\n\n" .
+                                    'Link detail: ' .
+                                    url()->current(),
                             );
                         @endphp
 
