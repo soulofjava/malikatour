@@ -129,7 +129,7 @@
                                         {{ $item->title }}
                                     </a>
                                     <p class="text-sm text-slate-400">
-                                        {{ $item->created_at->translatedFormat('d F Y') }}
+                                        Mulai dari Rp {{ number_format($tour->price, 0, ',', '.') }}
                                     </p>
                                 </div>
                             </div>
