@@ -33,7 +33,7 @@
                             <div class="splide w-full h-[300px] rounded-md overflow-hidden">
                                 <div class="splide__track">
                                     <ul class="splide__list">
-                                        @foreach ($images as $img)
+                                        @foreach ($images ?? [] as $img)
                                             <li class="splide__slide">
                                                 <img src="{{ asset('storage/' . $img) }}"
                                                     alt="Gambar {{ $loop->iteration }}"
@@ -118,7 +118,7 @@
                                     $img = is_array($item->image) ? $item->image[0] ?? null : $item->image;
                                 @endphp
 
-                                <img src="{{ $img ? asset('storage/' . $img) : 'https://via.placeholder.com/97x64?text=No+Image' }}"
+                                <img src="{{ $img ? asset('storage/' . $img) : asset('Logo-removebg-preview.png') }}"
                                     alt="{{ $item->title }}" style="width:97px; height:64px;"
                                     class="rounded-md object-cover shadow dark:shadow-gray-800 flex-shrink-0" />
 

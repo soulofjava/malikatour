@@ -50,7 +50,7 @@
                                 <img src="{{ asset('storage/' . $imgUrl) }}"
                                     alt="{{ $item->title }}" class="w-full" />
                             @else
-                                <img src="https://via.placeholder.com/400x300?text=No+Image" alt="No Image" class="w-full" />
+                                <img src="{{ asset('Logo-removebg-preview.png') }}" alt="No Image" class="w-full" />
                             @endif
             
                             <div class="mt-2 text-center font-semibold text-gray-800 dark:text-gray-200">
