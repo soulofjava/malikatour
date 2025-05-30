@@ -8,42 +8,62 @@
             <div class="grid grid-cols-12">
                 <div class="col-span-12">
                     <div class="py-[60px] px-0">
-                        <div class="grid grid-cols-1">
-                            <div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            {{-- Kolom Kiri --}}
+                            <div class="space-y-6">
                                 <a href="mailto:{{ $data->email }}"
-                                    class="relative inline-block font-semibold tracking-wide align-middle text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-2xl text-slate-900 dark:text-white dark:hover:text-white hover:text-indigo-600 after:bg-indigo-600 dark:after:bg-white duration-500 ease-in-out">{{ $data->email }}</a>
-                            </div>
-                            <p class="mt-6 max-w-2xl">
-                                <a href="https://www.google.com/maps?q=-7.2825185,109.9165955" target="_blank"
-                                    rel="noopener noreferrer" class="text-indigo-600 hover:underline">
-                                    {{ $data->alamat }}
+                                    class="relative inline-block font-semibold tracking-wide align-middle text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-2xl text-slate-900 dark:text-white dark:hover:text-white hover:text-indigo-600 after:bg-indigo-600 dark:after:bg-white duration-500 ease-in-out">
+                                    {{ $data->email }}
                                 </a>
-                            </p>
 
-
-                            <ul class="list-none mt-6">
-                                <li class="inline"><a href="{{ $data->instagram }}" target="_blank"
-                                        class="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center text-gray-400 hover:text-white border border-gray-100 dark:border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"><i
-                                            class="uil uil-instagram align-middle" title="instagram"></i></a></li>
-                                <li class="inline">
-                                    <a href="{{ $data->tiktok }}" target="_blank"
-                                        class="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center text-gray-400 hover:text-white border border-gray-100 dark:border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"
-                                        title="tiktok">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
-                                            <path
-                                                d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z" />
-                                        </svg>
+                                <p class="max-w-2xl">
+                                    <a href="https://www.google.com/maps?q=-7.2825185,109.9165955" target="_blank"
+                                        rel="noopener noreferrer" class="text-indigo-600 hover:underline">
+                                        {{ $data->alamat }}
                                     </a>
-                                </li>
+                                </p>
 
+                                <ul class="list-none flex gap-4">
+                                    <li>
+                                        <a href="{{ $data->instagram }}" target="_blank"
+                                            class="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center text-gray-400 hover:text-white border border-gray-100 dark:border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">
+                                            <i class="uil uil-instagram align-middle" title="instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ $data->tiktok }}" target="_blank"
+                                            class="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center text-gray-400 hover:text-white border border-gray-100 dark:border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"
+                                            title="tiktok">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
 
-                            </ul><!--end icon-->
-                        </div><!--end grid-->
-                    </div><!--end col-->
+                            {{-- Kolom Kanan (Statistik) --}}
+                            <div class="text-center text-sm text-dark dark:text-gray-400 space-y-1">
+                                <h2 class="text-lg font-bold text-slate-800 dark:text-white">Statistik Pengunjung
+                                    Website</h2>
+                                <p>Hari ini: {{ $visitorStats['today'] }}</p>
+                                <p>Kemarin: {{ $visitorStats['yesterday'] }}</p>
+                                <p>Minggu ini: {{ $visitorStats['week'] }}</p>
+                                <p>Bulan ini: {{ $visitorStats['month'] }}</p>
+                                <p>Tahun ini: {{ $visitorStats['year'] }}</p>
+                                <p>Total Pengunjung: {{ $visitorStats['total'] }}</p>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
-            </div><!--end grid-->
-        </div><!--end container-->
+
+            </div>
+            <!--end grid-->
+        </div>
+        <!--end container-->
 
         <div class="py-[30px] px-0 border-t border-slate-800">
             <div class="container relative text-center">
