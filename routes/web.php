@@ -1,18 +1,13 @@
 <?php
 
 use App\Models\Tour;
-use App\Models\Homestay;
 use App\Models\SiteSetting;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/tour/{tour}', function (Tour $tour) {
-    return view('front.pages.tour', compact('tour'));
+    $data = SiteSetting::first();
+    return view('front.pages.tour', ['tour' => $tour, 'data' => $data]);
 })->name('tour.detail');
-
-Route::get('/homestay/{homestay}', function (Homestay $homestay) {
-    return view('front.pages.detail', compact('homestay'));
-})->name('homestay.detail');
 
 Route::get('/', function () {
     $data = SiteSetting::first();
@@ -42,24 +37,15 @@ Route::get('kontakkami', function () {
     ]);
 });
 
-Route::get('layanan', function (Request $request) {
-    $filter = $request->query('filter', 'all'); // ambil ?filter= dari URL, default all
+Route::get('layanan', function () {
 
-    if ($filter == 'tour') {
-        $items = Tour::all();
-    } elseif ($filter == 'homestay') {
-        $items = Homestay::all();
-    } else {
-        // gabungkan
-        $tours = Tour::all();
-        $homestays = Homestay::all();
-        $items = $tours->concat($homestays);
-    }
-    
     $data = SiteSetting::first();
+    // Ambil semua data tour
+    $tours = Tour::with('kategori')->latest()->get(); // opsional: tambah relasi kategori
+    $kategoriList = $tours->pluck('kategori.nama')->unique()->filter()->values();
     return view('front.pages.layanan', [
         'data' => $data,
-        'items' => $items,
-        'filter' => $filter,
+        'tours' => $tours,
+        'kategoriList' => $kategoriList,
     ]);
 });

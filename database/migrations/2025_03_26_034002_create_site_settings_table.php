@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('alamat');
             $table->string('email');
             $table->string('kontak');
+            $table->string('whatsapp')->nullable();
             $table->string('instagram')->nullable();
             $table->string('tiktok')->nullable();
             $table->timestamps();
