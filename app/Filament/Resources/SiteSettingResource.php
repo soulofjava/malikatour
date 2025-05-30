@@ -35,7 +35,11 @@ class SiteSettingResource extends Resource
                     ->required(),
 
                 TextInput::make('kontak')
-                    ->label('Nomor Kontak / WhatsApp')
+                    ->label('Kontak')
+                    ->required(),
+
+                TextInput::make('whatsapp')
+                    ->label('WhatsApp (Untuk Link)')
                     ->required(),
 
                 TextInput::make('instagram')

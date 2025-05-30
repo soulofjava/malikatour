@@ -17,7 +17,7 @@
              <span class="inline-block dark:hidden">
                  <img src="{{ asset('Logo-removebg-preview.png') }}" class="l-dark" height="50" width="50"
                      alt="">
-                 <img src="{{ asset('Logo.PNG') }}" class="l-light" height="50" width="50" alt="">
+                 <img src="{{ asset('Logo-removebg-preview.png') }}" class="l-light" height="50" width="50" alt="">
              </span>
              <img src="{{ asset('Logo-removebg-preview.png') }}" height="50" width="50"
                  class="hidden dark:inline-block" alt="">
