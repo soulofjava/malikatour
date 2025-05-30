@@ -76,8 +76,7 @@
 
                         {{-- Tombol WhatsApp --}}
                         @php
-                            $site = \App\Models\SiteSetting::first();
-                            $nomorAsli = $site?->whatsapp ? preg_replace('/[^0-9]/', '', $site->whatsapp) : null;
+                            $nomorAsli = $data?->whatsapp ? preg_replace('/[^0-9]/', '', $site->whatsapp) : null;
                             $nomorWa =
                                 $nomorAsli && str_starts_with($nomorAsli, '0')
                                     ? '62' . substr($nomorAsli, 1)
@@ -103,9 +102,6 @@
 
                 <div class="lg:col-span-4 md:col-span-6">
                     <div class="sticky top-20">
-                        @php
-                            $recentTours = \App\Models\Tour::latest()->take(3)->get();
-                        @endphp
 
                         <h5
                             class="text-lg font-semibold bg-gray-50 dark:bg-slate-800 shadow dark:shadow-gray-800 rounded-md p-2 text-center mt-8">

@@ -9,7 +9,8 @@ Route::middleware(['web', TrackVisitor::class])->group(
     function () {
         Route::get('/tour/{tour}', function (Tour $tour) {
             $data = SiteSetting::first();
-            return view('front.pages.tour', ['tour' => $tour, 'data' => $data]);
+            $recentTours = \App\Models\Tour::latest()->take(5)->get();
+            return view('front.pages.tour', ['tour' => $tour, 'data' => $data, 'recentTours' => $recentTours]);
         })->name('tour.detail');
 
         Route::get('/', function () {
