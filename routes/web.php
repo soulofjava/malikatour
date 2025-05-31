@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Middleware\TrackVisitor;
+use App\Models\Portofolio;
 use App\Models\Tour;
 use App\Models\SiteSetting;
 use Illuminate\Support\Facades\Route;
@@ -29,8 +30,10 @@ Route::middleware(['web', TrackVisitor::class])->group(
 
         Route::get('portofolio', function () {
             $data = SiteSetting::first();
+            $portofolio = Portofolio::all();
             return view('front.pages.portofolio', [
                 'data' => $data,
+                'portofolio' => $portofolio,
             ]);
         });
 
