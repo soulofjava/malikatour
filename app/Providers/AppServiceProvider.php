@@ -30,7 +30,7 @@ class AppServiceProvider extends ServiceProvider
         if (Schema::hasTable('visitors')) {
             $today = Carbon::today();
             $yesterday = Carbon::yesterday();
-            $startOfWeek = Carbon::now()->startOfWeek();
+            $startOfWeek = Carbon::now()->startOfWeek(Carbon::MONDAY);
             $startOfMonth = Carbon::now()->startOfMonth();
             $startOfYear = Carbon::now()->startOfYear();
 
