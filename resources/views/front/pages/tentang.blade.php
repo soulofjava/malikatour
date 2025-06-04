@@ -41,15 +41,11 @@
                             </div>
 
                             <p class="text-slate-400 dark:text-white mt-6">
-                                Andalas Tour Organizer telah melayani perjalanan wisata di Wonosobo selama bertahun-tahun.
-                                Kami berkomitmen memberikan pengalaman wisata yang berkesan dengan layanan profesional dan
-                                personal.
-                                Dengan pemahaman mendalam tentang destinasi lokal, kami membantu Anda menjelajahi keindahan
-                                alam dan budaya secara optimal.
+                                {!! $data->kontak_kami !!}
                             </p>
 
                             <!-- Tombol Download Company Profile -->
-                            <a href="/Company%20Profile.pdf" download
+                            <a href="{{ Storage::url($data->path_cv) }}" download
                                 class="relative inline-block font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-slate-400 dark:text-white/70 dark:hover:text-white hover:text-indigo-600 after:bg-indigo-600 dark:after:bg-white duration-500 ease-in-out mt-6 mr-6">
                                 Download Company Profile <i class="uil uil-download-alt"></i>
                             </a>

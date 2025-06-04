@@ -12,6 +12,7 @@ use Filament\Forms\Components\TextInput;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Filament\Resources\SiteSettingResource\Pages;
+use FilamentTiptapEditor\TiptapEditor;
 use App\Filament\Resources\SiteSettingResource\RelationManagers;
 
 class SiteSettingResource extends Resource
@@ -47,6 +48,22 @@ class SiteSettingResource extends Resource
 
                 TextInput::make('tiktok')
                     ->label('TikTok'),
+
+                TiptapEditor::make('sambutan')
+                    ->label('Sambutan')
+                    ->columnSpanFull(),
+
+                TiptapEditor::make('kontak_kami')
+                    ->label('Tentang Kami')
+                    ->columnSpanFull(),
+
+                \Filament\Forms\Components\FileUpload::make('path_cv')
+                    ->label('Upload CV (PDF)')
+                    ->acceptedFileTypes(['application/pdf'])
+                    ->directory('site-cv')
+                    ->downloadable()
+                    ->openable()
+                    ->columnSpanFull(),
             ]);
     }
 

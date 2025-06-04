@@ -16,6 +16,9 @@ return new class extends Migration
             $table->string('alamat');
             $table->string('email');
             $table->string('kontak');
+            $table->longText('sambutan')->nullable();
+            $table->longText('kontak_kami')->nullable();
+            $table->string('path_cv')->nullable();
             $table->string('whatsapp')->nullable();
             $table->string('instagram')->nullable();
             $table->string('tiktok')->nullable();
