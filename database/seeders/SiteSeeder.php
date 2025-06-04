@@ -13,6 +13,7 @@ class SiteSeeder extends Seeder
      */
     public function run(): void
     {
+        SiteSetting::truncate();
         SiteSetting::create([
             'email' => 'andalas.tourorganizer@gmail.com',
             'alamat' => 'Menjer RT.4 / RW.2 Desa Menjer, Kecamatan Garung, Kabupaten Wonosobo',
